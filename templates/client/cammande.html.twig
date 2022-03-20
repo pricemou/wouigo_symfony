@@ -1,0 +1,496 @@
+{% extends 'admin_navBar.html.twig' %}
+
+{% block title %}Dashbord client!
+{% endblock %}
+
+
+{% block body %}
+	<div class="content-wrapper">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-xl-9 col-lg-9 col-md-12   col-sm-12 ">
+
+					<div class="row mt-4 ">
+						<div class="col-xl-12 col-sm-12 ">
+							<div class="row">
+								<div class="col-xl-8 col-sm-12 ">
+									<div class="apropos mb-4 row">
+										<div class="col-6">
+											<h2>COMMANDE</h2>
+										</div>
+										<div class="col-6 text-right">
+											<button class="text-white btn" style="border-radius: 10px;font-size: 9px;padding: 3px;background: #31f714;border-color: #31f714;-webkit-box-shadow : 5px 6px 10px 0px rgb(119 119 119 / 34%)">reduire</button>
+										</div>
+
+										<p class="m-0">
+											Retrouvez ici, les détail de votre compte client.<br>
+											Vous pouvez actualisez les donnée de votre profil utilisateur, le moyen
+											<br>
+											de paiement ainsi que le lieu reception par default de vos véhicules.<br>
+
+										</p>
+
+                                        <!-- Modal HTML embedded directly into document -->
+                                        <div id="ex1" class="modal" style="position: fixed;right: 20rem; z-index: 1050;display: none;outline: 0;left: none;left: 37%;top: 114px;bottom: auto; inset: 35% 20rem auto 31% !important; max-width: 735px !important;margin-top: -8%;">
+											<div class="tableValidation ">
+                                               <div>
+													<p class="text-center mb-1 h6 font-weight-bold">Séléctionnez les voiture pour les quelles</p>
+													<p class="text-center h6 font-weight-bold">Vous voulez souscrire à KINDO</p>
+											   </div>
+											   <div>
+												<form class="navbar-form" role="search" >
+													<div class="mt-4 p-1 bg-white rounded rounded-pill shadow-sm">
+														<div class="input-group rounded-pill rounded-pill  shadow-sm border border-1 p-0 mb-2 float-right" style="border: 1px solid #e9ecef!important; border-radius: 23px; width: 35%!important; height: 31px">
+														  <input type="search" placeholder="Saissir un véhicule" aria-describedby="button-addon1" class="form-control border-0 bg-white  p-0" style="margin: 6px;     height: 18px;">
+														  <div class="input-group-append">
+															<button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
+														  </div>
+														</div>
+													</div>
+												</form>
+											   </div>
+											   
+												<div class="">
+													<table class="table cst-fs-12 border text-center">
+														<thead>
+														  <tr class="text-white bg-primary">
+															<th scope="col" class=" cst-fw-4">N</th>
+															<th scope="col" class=" cst-fw-4">Immatriculation</th>
+															<th scope="col" class=" cst-fw-4">Marque</th>
+															<th scope="col" class=" cst-fw-4">Expiration Visite</th>
+															<th scope="col" class=" cst-fw-4">Dern. Commande</th>
+															<th scope="col" class=" cst-fw-4">Sélection</th>
+														  </tr>
+														</thead>
+														<tbody>
+														  <tr>
+															<th scope="row" class="" >O1</th>
+															<td  class="">BJ OOOO RB</td>
+															<td  class="" >TOYOTA</td>
+															<td  class="" >12/06/2022</td>
+															<td  class="" >Aucun</td>
+															<td  class="" >
+																<div class="form-check">
+																	<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+																</div>
+															</td>
+														  </tr>
+														  <tr>
+															<th scope="row" class="">02</th>
+															<td  class="">BJ OOOO RB</td>
+															<td class="">LAND ROVER</td>
+															<td class="">12/06/2022</td>
+															<td class="">Aucun</td>
+															<td class="">
+																<div class="form-check">
+																	<input class="form-check-input" type="radio" name="flexRadioDefault" id="sectVoiture">
+																</div>
+															</td>
+														  </tr>
+														  <tr>
+															<th scope="row" class="">03</th>
+															<td  class="">BJ OOOO RB</td>
+															<td class="">MITSUBISHI</td>
+															<td class="">12/06/2022</td>
+															<td class="">Aucun</td>
+															<td class="">
+																<div class="form-check">
+																	<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+																</div>
+															</td>
+														  </tr>
+														</tbody>
+														<tfoot class="bg-primary">
+															<tr>
+																<th scope="row" class=""></th>
+																<td class=""></td>
+																<td class=""></td>
+																<td class=""></td>
+																<td class=""></td>
+																<td class="text-white"><i class="fa-solid fa-arrow-left-long"></i> 1/1 <i class="fa-solid fa-arrow-right-long"></i> </td>
+
+															</tr>
+														</tfoot>
+													  </table>
+												</div>
+
+												<div id="selectValiderVoiture" class="row d-none">
+													<div class="input-group col-6 justify-content-end">
+														<button  type="submit"  id="selectvalider"  class="btn seConnecter"> Suivant</button>
+													</div>
+													<div class="input-group col-6">
+														<button class="btn seConnecter" type="submit" style="background-color: var(--color-secondary); border-color: var(--color-secondary);">Annuler</button>
+													</div>
+												</div>
+
+												<button id="modelClose" class="text-center btn btn-dark m-auto d-block " style="border-radius: 23px;font-size: 13px;padding: 0.2rem 0.75rem !important;">
+													<a href="#" rel="modal:close" class="text-white">Quitter</a>
+												</button>
+											</div>
+
+											<div id="facture" class="d-none">
+												<div>
+													<p class="text-center mb-1 h6 font-weight-bold">Votre facturation</p>
+											   </div>
+											   <div class="">
+												   <ul class="p-0 m-0">
+													   <li class="list-style-type-none cst-fs-12"><span class="font-weight-bold ">Facture N </span> 0000</li>
+													   <li class="list-style-type-none cst-fs-12"><span class="font-weight-bold ">Date émission </span> 18/07/2021</li>
+												   </ul>
+											   </div>
+											   
+											   	<div class="border p-2 rounded">
+													<table class="table cst-fs-12 border text-center">
+														<thead>
+														<tr class="text-white bg-primary">
+															<th scope="col" class=" cst-fw-4">Désignation des prestations</th>
+															<th scope="col" class=" cst-fw-4">Qté</th>
+															<th scope="col" class=" cst-fw-4">Prix Unitaire HT</th>
+															<th scope="col" class=" cst-fw-4">TVA</th>
+															<th scope="col" class=" cst-fw-4">Total TVA</th>
+															<th scope="col" class=" cst-fw-4">Total TTC</th>
+														</tr>
+														</thead>
+														<tbody>
+														<tr>
+															<th scope="row" class="" >Kindo</th>
+															<td  class="">2</td>
+															<td  class="" >8 474,58</td>
+															<td  class="" >18%</td>
+															<td  class="" >3 050,84</td>
+															<td  class="" > 20 000</td>
+														</tr>
+														<tr>
+															<th scope="row" class="">SOS Driver</th>
+															<td  class="">2</td>
+															<td class="">2 542,37</td>
+															<td class="">18%</td>
+															<td class="">915,25</td>
+															<td class="">6 000</td>
+														</tr>
+
+														<tr>
+															<th scope="row" class="">SOS Driver</th>
+															<td  class="">2</td>
+															<td class="">2 542,37</td>
+															<td class="">18%</td>
+															<td class="">915,25</td>
+															<td class="">6 000</td>
+														</tr>
+														</tbody>
+													</table>
+
+													<div class="row">
+														<div class="col-6 row">
+															<div class="col-12"> 
+
+															</div>
+															<div class="col-12 ">
+																<div class="row cst-coupon-tab-i mt-1" style="  margin: auto;">
+																	<span class="cst-fs-11 " style="color:  var(--color-blue);">Code de reduction /  Code promo</span>
+																	<div class="">
+																		<input class="form-control cst-txt-gray" type="text" style="padding: 0.35rem !important;">
+																	</div>
+																	<div class="ml-3">
+																		<button type="button" class="btn btn-info text-white" style="padding: 0.25rem 0.75rem !important;">OK</button>
+																	</div>
+																	<span class="cst-fs-11">Votre code est valide Clicker sur ok</span>
+																</div>
+															</div>
+															<div class="col-12"></div>
+														</div>
+
+														<div class="col-6 row" style="margin-top: -15px;">
+															<div class="col-12 p-0 m-0 row" style="left: 15% !important;background: #007bff82; color: #007bff;">
+																<div class="col-6 text-end mt-2  font-weight-bold" > TOTAL HT</div>
+																<div class="col-6 text-end mt-2  font-weight-bold"> 22 034</div>
+															</div>
+															<div class="col-12 p-0 m-0 row" style="left: 15% !important;background: aliceblue;">
+																<div class="col-6 text-end mt-2 font-weight-bold"  > TOTAL TVA</div>
+																<div class="col-6 text-end mt-2 font-weight-bold"> 22 034</div>
+															</div>
+															<div class="col-12 p-0 m-0 row" style="left: 15% !important;background: #007bff82; color: #007bff;" >
+																<div class="col-6 text-end mt-2 font-weight-bold " style="color: #007bff;"> TOTAL HT</div>
+																<div class="col-6 text-end mt-2  font-weight-bold"> 22 034</div>
+															</div>
+															
+														</div>
+
+														<div class="col-12 row mt-4" >
+															<div class="col-6 p-1" style="background: #007bff; left: 12px;">
+																<div class=" text-end h5 mt-1 text-white">
+																	MONTANT A PAYER
+																</div>
+															</div>
+	
+															<div class="col-6 p-1">
+																<div class="text-end h5 mt-1 font-weight-bold" style="color: #007bff;"> 26 000 F CFA</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div>
+													<div class="input-group justify-content-center mt-4">
+														<button id="validerFacture" class="btn seConnecter" type="submit" style="background-color: var(--orange); border-color: var(--orange);">Valider la commande</button>
+													</div>
+												</div>
+											   
+											</div>
+
+											<div id="factureConfirmer" class="d-none">
+												<div>
+													<img src="img/icône_success.png" data-retina="true" class="d-block m-auto cst-script-confim-image" alt="">
+													<div>
+														<p class="text-center h6">Félicitation! <br>
+														Votre paiement a éte exécuté avec succés</p>
+													</div>
+												</div>
+											</div>
+
+											<div id="factureImp" class="d-none">
+												<div>
+													<p class="text-center mb-1 h6 font-weight-bold">Planification RDV</p>
+													<p class="text-center cst-fs-11">
+														Précisez la date et l'heure de récupération de chaque véhicule par le chauffeur.
+														La date ne doit pas execeder 13 jours l'écheance de la VT 
+														Quant à l'heuren elle doit êtes entre 7H30 et 9H.
+													</p>
+
+													<div>
+														<table class="table cst-fs-12 border text-center bg-secondary ">
+															<thead>
+															<tr class="text-white ">
+																<th scope="col" class=" cst-fw-4 p-1 cst-vertical-align-baseline"> 
+																	<div class="cst-border-right bg-primary cst-border-right bg-primary ml-1 p-2 rounded">BJ 0000 RB</div>
+																</th>
+																<th scope="col" class=" cst-fw-4 p-1 cst-vertical-align-baseline">
+																	<div class="cst-border-right p-2 p-0 cst-vertical-align-baseline">00-00-0000</div>
+																</th>
+																<th scope="col" class="  cst-fw-4 p-1 cst-vertical-align-baseline">
+																	<div class="cst-border-right  p-2 p-0 cst-vertical-align-baseline"> 08-00</div>
+																</th>
+																<th scope="col" class="  cst-fw-4 p-1 cst-vertical-align-baseline">
+																	<div class="p-2"> initiale</div>
+																</th>
+															</tr>
+															</thead>
+															<tbody>
+															<tr>
+																<th scope="row" class="" >
+																	<div style=" width: 232%!important">
+																		<select class="form-control form-control-sm">
+																			<option>Lieu de reception</option>
+																		</select>
+																	</div>
+																</th>
+															</tr>
+															</tbody>
+														</table>
+													</div>
+
+													<div>
+														<table class="table cst-fs-12 border text-center bg-secondary">
+															<thead>
+															<tr class="text-white ">
+																<th scope="col" class=" cst-fw-4 p-1 cst-vertical-align-baseline"> 
+																	<div class="cst-border-right bg-primary cst-border-right bg-primary ml-1 p-2 rounded">BJ 0000 RB</div>
+																</th>
+																<th scope="col" class=" cst-fw-4 p-1 cst-vertical-align-baseline">
+																	<div class="cst-border-right p-2 p-0 cst-vertical-align-baseline">00-00-0000</div>
+																</th>
+																<th scope="col" class="  cst-fw-4 p-1 cst-vertical-align-baseline">
+																	<div class="cst-border-right  p-2 p-0 cst-vertical-align-baseline"> 08-00</div>
+																</th>
+																<th scope="col" class="  cst-fw-4 p-1 cst-vertical-align-baseline">
+																	<div class="p-2"> initiale</div>
+																</th>
+															</tr>
+															</thead>
+															<tbody>
+															<tr>
+																<th scope="row" class="" >
+																	<div style=" width: 232%!important">
+																		<select class="form-control form-control-sm">
+																			<option>Lieu de reception</option>
+																		</select>
+																	</div>
+																</th>
+															</tr>
+															</tbody>
+														</table>
+													</div>
+
+													<div>
+														<table class="table cst-fs-12 border text-center bg-secondary">
+															<thead>
+															<tr class="text-white ">
+																<th scope="col" class=" cst-fw-4 p-1 cst-vertical-align-baseline"> 
+																	<div class="cst-border-right bg-primary cst-border-right bg-primary ml-1 p-2 rounded">BJ 0000 RB</div>
+																</th>
+																<th scope="col" class=" cst-fw-4 p-1 cst-vertical-align-baseline">
+																	<div class="cst-border-right p-2 p-0 cst-vertical-align-baseline">00-00-0000</div>
+																</th>
+																<th scope="col" class="  cst-fw-4 p-1 cst-vertical-align-baseline">
+																	<div class="cst-border-right  p-2 p-0 cst-vertical-align-baseline"> 08-00</div>
+																</th>
+																<th scope="col" class="  cst-fw-4 p-1 cst-vertical-align-baseline">
+																	<div class="p-2"> initiale</div>
+																</th>
+															</tr>
+															</thead>
+															<tbody>
+															<tr>
+																<th scope="row" class="" >
+																	<div style=" width: 232%!important">
+																		<select class="form-control form-control-sm">
+																			<option>Lieu de reception</option>
+																		</select>
+																	</div>
+																</th>
+															</tr>
+															</tbody>
+														</table>
+
+														<div id="" class="row">
+															<div class="input-group justify-content-center col-12">
+																<button  type="submit"  id=""  class="btn seConnecter"> Enregistrer</button>
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+                                        </div> 
+                                        <!-- Link to open the modal -->
+                                        
+									</div>
+
+                                    <div class="mb-4 row">
+										<div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 ">
+											<h2 class="text-center rounded p-2 text-white h5" style="background: #3ab5fc !important;">KINDO</h2>
+
+                                            <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque consntur ipsam quam isquam dolor perspiciatis. Aut culpa molestiae id. Cupiditate.</p>
+
+                                            <div class="">
+                                                <a href="#ex1" rel="modal:open" class="btn seConnecter kindoSoucription m-auto d-block  bg-primary w-50 a-hover">JE SOUSCRIS</a>
+                                                <!-- <input type="submit" value="" class=""> -->
+												<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+													Launch demo modal
+												</button> -->
+                                            </div>
+										</div>
+										<div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 ">
+											<h2 class="text-center rounded p-2 text-white h5" style="background: #3ab5fc !important; ">SOS Driver</h2>
+
+                                            <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque consntur ipsam quam isquam dolor perspiciatis. Aut culpa molestiae id. Cupiditate.</p>
+
+                                            <div class="">
+                                                <!-- <input type="submit" value="JE SOUSCRIS" class="btn seConnecter m-auto d-block  bg-primary"> -->
+												<a href="#ex1" rel="modal:open" class="btn seConnecter kindoSoucription m-auto d-block  bg-primary w-50 a-hover"  style="border-color: #e8801d !important;background-color: #e8801d !important;">JE SOUSCRIS</a>
+                                            </div>
+										</div>
+									</div>
+
+									<div class="">
+										<div id="soucription-kindo" class="cardre_aroundi d-none row m-0 p-0">
+											<div class="col-10">
+												<h2>Récap Commandes
+												</h2>
+											</div>
+											<div class="col-2 text-right">
+												<button class="text-white btn" style="border-radius: 10px;font-size: 9px;padding: 4px;background: #31f714;border-color: #31f714;-webkit-box-shadow : 5px 6px 10px 0px rgb(119 119 119 / 34%)">reduire</button>
+											</div>
+										</div>
+									</div>
+
+									<div>
+										<div class="liste-cmd-soucription d-none">
+											<table class="table cst-fs-10 border text-center">
+												<thead>
+												  <tr class="text-white bg-primary">
+													<th scope="col" class="p-1 cst-fw-4">Num Cmd</th>
+													<th scope="col" class="p-1 cst-fw-4">Immatriculation</th>
+													<th scope="col" class="p-1 cst-fw-4">Service souscrit</th>
+													<th scope="col" class="p-1 cst-fw-4">Montant facture</th>
+													<th scope="col" class="p-1 cst-fw-4">Detail</th>
+												  </tr>
+												</thead>
+												<tbody>
+												  <tr>
+													<th scope="row" class="p-1" >C00030</th>
+													<td  class="p-1 ">BJ OOOO RB</td>
+													<td  class="p-1" ><span class="kindo-soucription bg-primary">TOYOTA</span></td>
+													<td  class="p-1" >12/06/2022</td>
+													<td  class="p-1" ><i class="fa-solid fa-eye"></i></td>
+												  </tr>
+												  <tr>
+													<th scope="row" class="p-1">C00033</th>
+													<td  class="p-1">BJ OOOO RB</td>
+													<td class="p-1"><span class="kindo-soucription " style="background-color: #e8801d;">LAND ROVER</span></td>
+													<td class="p-1">12/06/2022</td>
+													<td class="p-1"><i class="fa-solid fa-eye"></i></td>
+												  </tr>
+												</tbody>
+											  </table>
+										</div>
+									</div>
+		
+
+								</div>
+
+								<div class="col-xl-8 col-sm-12 ">
+									
+								</div>
+								
+							</div>
+						</div>	
+					</div>
+				</div>
+
+				<div class="col-lg-3 notification">
+					<div class="row mt-4">
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6>FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6>FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6>FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6>FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Icon Cards-->
+
+
+		</div>
+		<!-- /cards -->
+		<h2></h2>
+
+		<!-- /.container-fluid-->
+	</div>
+{% endblock %}

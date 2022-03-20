@@ -1,0 +1,45 @@
+{% extends 'admin_login.html.twig' %}
+
+{% block title %} AdminController!
+{% endblock %}
+
+{% block body %}
+	<main>
+		<div id="login" class="login sign_up_two">
+			<div class="containe">
+				<div class="row centerlogin">
+
+					<img src="img/Logo_ecriture_bleu_sans_fond.svg" data-retina="true" alt="" width="163" class="loginImageCenter">
+
+
+					<div class="col-12">
+						<label for="Prénom/adresse email" class="logintext">Nom</label>
+						<input type="text" name="" placeholder="FADJOUM" class="login_input" id="">
+					</div>
+
+					<div class="col-12 mt-2">
+						<label for="" class="logintext">Prénom</label>
+						<input type="password" name="" placeholder="Andou" class="login_input" id="">
+					</div>
+
+					<div class="col-12 mt-2">
+						<label for="" class="logintext">Date de naissance</label>
+						<input type="date" name="begin" placeholder="09/12/1992" value="" min="1997-01-01" max="2030-12-31" class="login_input" id="">
+					</div>
+
+					<div>
+						<div class="input-group sign_up_two_button">
+							<span class="input-group-btn loginTaille">
+								<button class="btn  seConnecter " type="button">
+									Se connecter
+								</button>
+							</span>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</main>
+{% endblock %}

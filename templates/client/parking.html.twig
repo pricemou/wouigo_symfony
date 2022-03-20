@@ -1,0 +1,238 @@
+{% extends 'admin_navBar.html.twig' %}
+
+{% block title %}Dashbord client!
+{% endblock %}
+
+{% block body %}
+	<div class="content-wrapper">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-xl-9 col-lg-9 col-md-12   col-sm-12 ">
+
+					<div class="row mt-4 ">
+						<div class="col-xl-12 col-sm-12 ">
+							<div class="row">
+								<div class="col-xl-8 col-sm-12 ">
+									<div class="apropos row">
+										<div class="col-6">
+											<h2>PARKING</h2>
+										</div>
+										<div class="col-6 text-right">
+											<h7>Réduire</h7>
+										</div>
+
+										<p class="m-0">
+											Retrouvez ici, les detail de votre compte Drive/Chauffeur WOUIGO.<br>
+											Pour vitre prendre vos repères sur votre espace utilisateur, nous vous recommandons
+											<br>
+											de sSalaiersuive le guide d'initialisation à 3 étapes ci-dessous.<br>
+
+										</p>
+									</div>
+
+                                    <form class="navbar-form" role="search" >
+										<div class="mt-4 p-1 bg-light rounded rounded-pill shadow-sm">
+											<div class="input-group rounded-pill rounded-pill w-50 shadow-sm border border-1 p0 m0" style="border: 1px solid #e9ecef!important; border-radius: 23px;">
+											  <input type="search" placeholder="Saissir une immatriculation" aria-describedby="button-addon1" class="form-control border-0 bg-light p-1" style="margin: 6px;">
+											  <div class="input-group-append">
+												<button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
+											  </div>
+											</div>
+										</div>
+									</form>
+								</div>
+
+								<div class="col-xl-8 col-sm-12 ">
+									<form action="" method="POST" >
+										<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+										<div class="cardre_aroundi row">
+											<div class="col-12 mb-3 cst-fs-12">
+												<a  class="cst-fs-12">
+													<i id="plus-cercle" class="fas fa-plus-circle"></i>
+													Ajoutez/Enregistrer un lieu de récuperation de vos véhicules</a>
+											</div>
+											<div id="ajoutVehicule" class="row d-none">
+												<div class="col-4 mt-2">
+													<label for="exampleInputEmail1" class="text-primary cst-ff-sans-serif">Immatriculation</label>
+													<input type="email" class="form-control form-control-sm border border-primary" placeholder="BJ 0000 RB" id="exampleInputEmail1" aria-describedby="emailHelp" style="padding: 0.45rem;" >
+												</div>
+
+												<div class="col-4 mt-2">
+													<label for="exampleInputEmail1" class="text-primary cst-ff-sans-serif">Marque</label>
+													<input type="email" class="form-control form-control-sm border border-primary" placeholder="TOYOTA" id="exampleInputEmail1" aria-describedby="emailHelp" style="padding: 0.45rem;" >
+												</div>
+
+												<div class="col-4 mt-2">
+													<label for="exampleInputEmail1" class="text-primary cst-ff-sans-serif">Modéle</label>
+													<input type="email" class="form-control form-control-sm border border-primary" placeholder="HIGHLANDER" id="exampleInputEmail1" aria-describedby="emailHelp" style="padding: 0.45rem;" >
+												</div>
+
+												<div class="col-4 mt-2">
+													<label for="exampleInputEmail1" class="text-primary cst-ff-sans-serif">Chassis</label>
+													<input type="email" class="form-control form-control-sm border border-primary" id="exampleInputEmail1" placeholder="9 derniers caracter" aria-describedby="emailHelp" style="padding: 0.45rem;" >
+												</div>
+
+												<div class="col-2 mt-2">
+													<label for="exampleInputEmail1" class="text-primary cst-ff-sans-serif">Puissance</label>
+													<input type="email" class="form-control form-control-sm border border-primary" id="exampleInputEmail1" placeholder="12" aria-describedby="emailHelp" style="padding: 0.45rem;" >
+												</div>
+
+												<div class="col-2 mt-2">
+													<label for="exampleInputEmail1" class="text-primary cst-ff-sans-serif">Place</label>
+													<input type="email" class="form-control form-control-sm border border-primary" id="exampleInputEmail1" placeholder="5" aria-describedby="emailHelp" style="padding: 0.45rem;" >
+												</div>
+
+												<div class="col-4 mt-2">
+													<label for="exampleInputEmail1" class="text-primary cst-ff-sans-serif">Poid total (kg)</label>
+													<input type="email" class="form-control form-control-sm border border-primary" id="exampleInputEmail1" placeholder="3200" aria-describedby="emailHelp" style="padding: 0.45rem;" >
+												</div>
+
+												<div class="col-4 mt-2">
+													<label for="exampleInputEmail1" class="text-primary cst-ff-sans-serif">Boite a vitesse</label>
+													<select class="form-control border border-primary" style="padding: 0.45rem; height: calc(2.4rem + 2px);!important"  id="exampleFormControlSelect1">
+														<option></option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+														<option>5</option>
+													</select>
+												</div>
+
+												<div class="col-4 mt-2">
+													<label for="exampleInputEmail1" class="text-primary cst-ff-sans-serif">Date Expiration V</label>
+													<input type="email" class="form-control form-control-sm border border-primary" placeholder="00-00-0000" id="exampleInputEmail1" aria-describedby="emailHelp" style="padding: 0.45rem;" >
+												</div>
+												
+												<div class="col-4 mt-2">
+													<label for="exampleInputEmail1" class="text-primary cst-ff-sans-serif">Périodicité visite T</label>
+													<select class="form-control border border-primary" style="padding: 0.45rem; height: calc(2.4rem + 2px);!important" id="exampleFormControlSelect1">
+														<option></option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+														<option>5</option>
+													</select>
+												</div>
+
+												<div class="col-12">
+													<div class="input-group loginButton justify-content-center" style="left: 0% !important">
+														<span class="input-group-btn loginTaille">
+															<input id="Enregistrer" type="button" value="Enregistrer" class="btn seConnecter" style="width: 7rem !important;">
+														</span>
+													</div>
+												</div>
+											</div>
+
+											
+										</div>
+									</form>
+								</div>
+
+								<div id="table_parking" class="col-12 d-none " > 
+									<table class="table text-center cst-fs-12 ">
+										<thead>
+										  <tr class="parking-thead bg-primary text-white fw-light">
+											<th scope="col">N</th>
+											<th scope="col">Immatriculation</th>
+											<th scope="col">Marque</th>
+											<th scope="col">Expiration Visite </th>
+											<th scope="col">Dern. Commande</th>
+											<th scope="col">Caisse CNSR</th>
+											<th scope="col">Détails</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr id="parking" class="parking-tbody ">
+											<th scope="row">1</th>
+											<td>Mark</td>
+											<td>Otto</td>
+											<td>@mdo</td>
+											<td>@mdo</td>
+											<td>
+												<input type="submit" style="background-color: #3ab5fc;" value="SOS Dirive" class="btn p-1 text-white cst-fs-9 ">
+											</td>
+											<td>@mdo</td>
+										  </tr>
+										  <tr>
+											<th scope="row">2</th>
+											<td>Jacob</td>
+											<td>Thornton</td>
+											<td>@fat</td>
+											<td>@mdo</td>
+											<td>
+												<input type="submit" style="background-color: #fd7e14;" value="SOS Dirive" class="btn p-1 text-white cst-fs-9 ">
+											</td>
+											<td>@mdo</td>
+										  </tr>
+										  <tr>
+											<th scope="row">3</th>
+											<td>@twitter</td>
+											<td>@mdo</td>
+											<td>@mdo</td>
+											<td>@mdo</td>
+											<td>
+												<input type="submit" style="background-color: #3ab5fc;" value="SOS Dirive" class="btn p-1 text-white cst-fs-9 ">
+											</td>
+											<td>@mdo</td>
+										  </tr>
+										</tbody>
+									</table>
+
+									<div class="input-group loginButton justify-content-center" style="left: 0% !important">
+										<span class="input-group-btn loginTaille">
+											<input id="Enregistrer" type="button" value="Quitter" class="btn seConnecter bg-secondary " style="border-color: #868e96;width: 7rem !important;">
+										</span>
+									</div>
+								</div>
+								
+							</div>
+						</div>	
+					</div>
+				</div>
+
+				<div class="col-lg-3 notification">
+					<div class="row mt-4">
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6>FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6>FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6>FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6>FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Icon Cards-->
+
+
+		</div>
+		<!-- /cards -->
+		<h2></h2>
+
+		<!-- /.container-fluid-->
+	</div>
+{% endblock %}

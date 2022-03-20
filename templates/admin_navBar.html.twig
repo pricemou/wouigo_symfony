@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="Ansonika">
+
+		<title>
+			{% block title %}Wouigo
+			{% endblock %}
+		</title>
+
+
+		{% block stylesheets %}
+			{#{{ encore_entry_link_tags('app') }}#}
+			
+			<!-- Favicons-->
+			<link rel="icon" href="{{asset('/img/Logo_Wouigo.jpg')}}" type="image/gif" sizes="16x16">
+
+			<!-- FONT fontawesome -->
+			<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+			<!-- GOOGLE WEB FONT -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+			
+			<link
+			href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+
+			<!-- Bootstrap core CSS-->
+			<link href="/css/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			 <!-- Main styles -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+			<link href="/css/admin/css/admin.css" rel="stylesheet">
+			<!-- Your custom styles -->
+			<link href="/css/admin/css/custom.css" rel="stylesheet">
+		{% endblock %}
+
+
+		{% block javascripts %}
+			{#{{ encore_entry_script_tags('app') }}#}
+		    <script src="/js/app.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+			<!-- Bootstrap core JavaScript-->
+			<script src="/css/admin/vendor/jquery/jquery.min.js"> </script>
+			
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		{% endblock %}
+	</head>
+	<body class="fixed-nav sticky-footer" id="page-top">
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-default fixed-top" id="mainNav">
+			<a class="navbar-brand" href="{{path('app_dashbord_client')}}"><img src="img/Logo_ecriture_bleu_sans_fond.svg" data-retina="true" alt="" width="163" height="56"></a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+					<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+						<a
+							class="nav-link" href="{{path('app_dashbord_client')}}">
+							<!-- <i class="fa fa-fw fa-dashboard"></i> -->
+							<span class="nav-link-text">Tableau de bord</span>
+						</a>
+					</li>
+					<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Messages">
+						<a
+							class="nav-link" href="{{path('app_dashbord_parametre')}}">
+							<!-- <i class="fa fa-fw fa-envelope-open"></i> -->
+							<span class="nav-link-text">Messages
+								<span class="badge badge-pill badge-primary">6 New</span>
+							</span>
+						</a>
+					</li>
+					<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Bookings">
+						<a class="nav-link" href="{{path('cammande_initial')}}">
+							<span class="nav-link-text">Commandes
+							</span>
+						</a>
+					</li>
+					<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Reviews">
+						<a class="nav-link"  href="{{path('app_dashbord_parking')}}">
+							<span class="nav-link-text">Mon parking</span>
+						</a>
+					</li>
+					<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Bookmarks">
+						<a class="nav-link" href="{{path('paiement_initial')}}">
+							<span class="nav-link-text">Paramètres</span>
+						</a>
+
+					</li>
+					<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Add listing">
+						<a class="nav-link" href="{{path('affiliation')}}">
+							<span class="nav-link-text">Mes affiliations</span>
+						</a>
+					</li>
+					<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Add listing" style="margin-bottom: -28px;">
+						<a class="ligne" href="#">
+							<span class="nav-link-text">
+								<hr>
+							</span>
+						</a>
+					</li>
+					<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Add listing">
+						<a class="nav-link" href="#">
+							<span class="nav-link-text">Aide/Support Tech.</span>
+						</a>
+					</li>
+					<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Add listing">
+						<a class="nav-link" href="{{path('about')}}">
+							<span class="nav-link-text">A propos de Wouigo</span>
+						</a>
+					</li>
+
+				</ul>
+				<ul class="navbar-nav sidenav-toggler">
+					<li class="nav-item">
+						<a class="nav-link text-center" style="color: #75706f;" id="sidenavToggler">
+							contact@wouigo.com
+						</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<div class="input-group">
+							<span class="input-group-btn">
+								<h3 class="nomConnecter">Claude PRICEMOU</h3>
+							</span>
+						</div>
+					</li>
+					<li class="nav-item">
+						<div class="input-group">
+							<span class="input-group-btn">
+								<input type="submit" value="Se déconnecter" class="btn seConnecter">
+							</span>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+		</li>
+
+	</body>
+</html></ul></body></html></div></nav>{% block body %}{% endblock %}<footer class="sticky-footer"><div class=""><div class="row"><div class="col-lg-8"><p class="text-center" style="font-size: 12px;margin-top: 15px;margin-bottom: 0px">CGV - CGU</p></div><div class="col-lg-4"><p class="text-right" style="font-size: 12px; margin-right: 16px; margin-bottom: 0px;margin-top: 15px;">Wouigo, Copyright 2021</p></div></div></div></footer><!-- Scroll to Top Button--><a class="scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a><!-- Logout Modal--><script src="/js/script.js"></script></body></html>

@@ -1,0 +1,88 @@
+{% extends 'admin_login.html.twig' %}
+
+{% block title %}Login
+{% endblock %}
+
+{% block body %}
+
+	<div class="cst-full-hs">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-6  login-banner">
+					<section class="showcase">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-12 text-center">
+									<img src="{{asset('/img/Logo_Wouigo.jpg')}} " alt="Logo_Wouigo"/>
+
+									<p class="lead text-center mt-3">Nous aidons les particuliers et entreprises
+										<br>
+										a faire la visite techique de leurs véhicules
+										<br>
+										dans les delais et sans tracas.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-6 ">
+					<main>
+						<form action="{{path('app_dashbord_client')}}" method="POST">
+							<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+							<div id="login" class="login" style="margin: 11rem auto !important;">
+								<div class="containe mt-5">
+									<div class="row centerlogin">
+
+										<img src="{{asset('/img/Logo_ecriture_bleu_sans_fond.svg')}}" data-retina="true" alt="" width="163" class="loginImageCenter m-auto d-block">
+
+										<div class="col-12">
+											<label for="Prénom/adresse email" class="logintext">
+												Prénom/Adress email</label>
+											<input type="text" name="" class="login_input" id="" placeholder="andou.fadjoum@gmail.com">
+										</div>
+
+										<div class="col-12 mt-2">
+											<label for="" class="logintext">
+												Mot de passe</label>
+											<input type="password" name="" class="login_input" id="" placeholder="****************">
+										</div>
+
+										<div class="col-12 mt-1">
+											<div class="row crt-possition">
+												<div class="col-6 ">
+													<div>
+														<input type="checkbox" class="form-check-input " id="exampleCheck1">
+														<label for="" class="logintext" style="font-size:10px">
+															Se sounvenir de moi</label>
+													</div>
+												</div>
+												<div class="col-6">
+													<input type="checkbox" class="form-check-input " id="exampleCheck1">
+													<label for="" class="logintext " style="font-size:10px">
+														Mot de passe oublié</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 mt-2">
+											<div class="input-group loginButton mb-3" style="top: 27px;" >
+												<span class="input-group-btn loginTaille">
+													<input type="submit" value="Se connecte" class="btn seConnecter" style="width: 7rem !important;">
+												</span>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+						</form>
+					</main>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}

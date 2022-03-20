@@ -1,0 +1,124 @@
+{% extends 'admin_login.html.twig' %}
+
+{% block title %} AdminController!
+{% endblock %}
+
+{% block body %}
+	<main>
+		<div id="login" class="login sign_up_four">
+			<div class="containe">
+				<div class="row centerlogin">
+
+					<img src="img/Logo_ecriture_bleu_sans_fond.svg" data-retina="true" alt="" width="163" class="loginImageCenter">
+
+
+					<div class="col-12">
+						<label for="Prénom/adresse email" class="logintext">Email/Numéro téléphone</label>
+						<input type="text" name="" placeholder="+22967000000" class="login_input" id="">
+					</div>
+
+					<div class="col-12 mt-2">
+						<label for="" class="logintext">Mots de passe
+						</label>
+						<input type="password" name="" placeholder="**************" class="login_input" id="">
+					</div>
+
+					<div class="col-12 mt-2">
+						<label for="" class="logintext">Confirmation de mode passe</label>
+						<input type="password" name="" placeholder="****************" class="login_input" id="">
+					</div>
+
+
+					<div>
+						<div class="input-group sign_up_three_button">
+							<span class="input-group-btn loginTaille">
+								<button class="btn  seConnecter " type="button" data-toggle="modal" data-target="#myModal">
+									Se connecter
+								</button>
+							</span>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</main>
+
+	<!-- Modal -->
+	<div class="modal fade modelcenter" id="myModal" role="dialog">
+		<div
+			class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content forme">
+
+				<div class="modal-body ligne">
+					<p>En cliquant sur
+						<br/>
+					</p>
+					<p>"<span style="color:#3ab5fc">Enregistrer</span>",
+						<br/>
+					</p>
+					<p>vous reconnaissez avoir fourni
+						<br/>
+					</p>
+					<p>des information fiable et
+						<br/>
+					</p>
+					<p>correctes.
+						<br/>
+					</p>
+				</div>
+
+				<div class="input-group sign_up_four_button">
+					<span class="input-group-btn sign_up_four_loginTaille">
+						<button class="btn  seConnecter " type="button" data-toggle="modal" data-target="#myModal1">
+							Enregistré
+						</button>
+					</span>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Modal -->
+	<div class="modal fade modelcenter" id="myModal1" role="dialog">
+		<div
+			class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content forme">
+				<img src="img/Logo_ecriture_bleu_sans_fond.svg" data-retina="true" alt="" width="163" class="loginImageCenter">
+
+
+				<div class="modal-body ligne">
+					<p>
+						Félicitations!
+						<br/>
+					</p>
+					<p>Votre compte a été créé avec succés.
+						<br/>
+					</p>
+					<p>Vous pouvez à présent accéder à votre
+						<br/>
+					</p>
+					<p>espace utilisateur
+						<br/>
+					</p>
+				</div>
+
+				<div class="input-group sign_up_four_button" style="left: 37%; top: -7%;">
+					<span class="input-group-btn sign_up_four_loginTailles" style="op: -41% left: 34%;">
+						<button class="btn  seConnecter " type="button" class="left: 118px;top: -13x;">
+							Enregistré
+						</button>
+					</span>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}

@@ -1,0 +1,412 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Wouigo
+{% endblock %}
+
+{% block body %}
+
+	<div class="cst-full-h">
+		<!-- banner -->
+		<section class="h-100 d-flex banner home-banner">
+			<div class=" h-100 px-5 d-flex align-items-center banner-content">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-6 px-md-5">
+						<h3 class="fw-bold">Faites la visite techinique de vos véhicules
+							<span>dans les délais.</span>
+						</h3>
+						<p class="ps-md-9 my-4">
+							Avec Wouigo, suive au quotidien l'echance de la visite technique de vos véhicules ou demandez un chauffeur sir vous n'avez pas le temps d'aller au CNSR.
+						</p>
+						<div class="d-md-flex align-items-center">
+							<a class="col-8 col-sm-4 py-2   px-4 me-sm-5 btn my-3 m-sm-0 btn-style text-center text-white  custom-bg-skyblue"  href="{{path('app_sign_profil')}}">Ouvrir un compte</a>
+							<a class="col-8 col-sm-4 py-2   px-4 btn btn-style cst-txt-blue custom-bg-white cst-border-solid-blue bg-white" href="{{path('app_info_vehicule')}}">Souscrire</a>
+
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-md-6 col-lg-6 mt-4 px-md-5">
+						<img src="{{asset('/img/Image_interface_1.png')}}" alt="Logo_ecriture_bleu_sans_fond" style="width: 108%;"/>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+	<!-- Solutions -->
+	<section class="main-section services cst-bg-lightblue">
+		<div class="separator pt-4 pt-md-5 text-center">
+			<p class="fs-1 pm-0 separator-title cst-txt-gray mb-0 mb-md-0 mt-5">Nos services</p>
+			<p class="cst-fs-sm m-0 cst-txt-lightgray px-4">Deux services utiles conçus sur mesure pour vos besoins</p>
+		</div>
+		<div class="container row m-auto px-md-5 justify-content-evenly">
+			<div class="py-3 py-md-5 text-center d-flex flex-column align-items-center col-10 col-md-4">
+				<div class="bules col">
+					<img src="{{asset('/img/Logo_Kingo.png')}}" alt="Logo_Kingo" style="width: 50%;"/>
+				</div>
+				<p class="fs-3 my-3 cst-txt-gray">Kingo</p>
+				<p class="cst-fs-5 cst-txt-lightgray">
+					Recevez des rappels de
+					<br>
+					l'échéance de la visite technique
+					<br>
+					de votre  véhicule par SMS et appel
+					<br>
+					durant la période valide.</p>
+				<!-- <a class="btn my-3 px-4 custom-bg-skyblue text-decoration-none text-white btn-style py-2  " href="/account">Suivez l'échéance</a> -->
+			</div>
+			<div class="py-3 py-md-5 text-center d-flex flex-column align-items-center col-10 col-md-4">
+				<div class="bules col">
+					<img src="{{asset('/img/Logo_SOS_Driver.png')}}" alt="Logo_ecriture_bleu_sans_fond" style="width: 50%;"/>
+				</div>
+				<p class="fs-3 my-3 cst-txt-gray">SOS Driver</p>
+				<p class="cst-fs-5 cst-txt-lightgray">
+					Demandez un chauffeur
+					<br>
+					pour convoyer vos véhicules
+					<br>
+					légers ou privés au  CNSR
+					<br>
+					si vous n'avez pas le temps.
+				</p>
+				<!-- <a class="btn my-3 px-4 custom-bg-skyblue text-decoration-none text-white btn-style py-2  " href="/account">Demandez un chauffeur</a> -->
+			</div>
+		</div>
+
+	</section>
+
+	<!-- Avantages -->
+	<section class="main-section pb-3 pb-0 py-2 py-md-5 text-center avantages">
+		<div class="separator py-4 text-center">
+			<p class="fs-1 pm-0 separator-title cst-txt-gray mb-0 mb-md-0">Quels sont les avantages d'utiliser Wouigo?</p>
+			<p class="cst-fs-sm m-0 cst-txt-lightgray px-4">Utilisez nos solutions pour ...</p>
+		</div>
+		<div class="container row m-auto p-0 justify-content-center">
+			<div class="mx-md-4 m-2 m-md-3 my-4 p-1 pb-3 p-md-3 each-avtg col-5 col-md-2">
+				<!-- <div class="m-auto d-flex position-relative align-items-center justify-content-center card-number rounded-circle">
+					1</div> -->
+				<h5 class="cst-txt-lightblue h-25 mb-3 m-md-0 cst-fw-5 h6 text-primary text-center" >Planifier la <br> visite technique</h5>
+				<p class="cst-txt-lightgray">N'attendez pas la veille ou le jour J. Soyez prêt des jours ou mois à l'avance
+																																			                et ne stressez plus.</p>
+			</div>
+			<div class="mx-md-4 m-2 m-md-3 my-4 p-1 pb-3 p-md-3 each-avtg col-5 col-md-2 ">
+				<!-- <div class="m-auto d-flex position-relative align-items-center justify-content-center card-number rounded-circle">
+					2</div> -->
+				<h5 class="cst-txt-lightblue h-25 mb-3 m-md-0 cst-fw-5 h6 text-primary text-center">Gagner <br> du temps</h5>
+				<p class="cst-txt-lightgray">Le trajet + embouteillage + fil d'attente à l'arrivée vous feront à coup sûr
+																																			                perdre la journée. Nos chauffeurs sont là pour cette mission.</p>
+			</div>
+			<div class="mx-md-4 m-2 m-md-3 my-4 p-1 pb-3 p-md-3 each-avtg col-5 col-md-2">
+				<!-- <div class="m-auto d-flex position-relative align-items-center justify-content-center card-number rounded-circle">
+					3</div> -->
+				<h5 class="cst-txt-lightblue h-25 mb-3 m-md-0 cst-fw-5 h6 text-primary text-center">Economiser <br> de l'argent</h5>
+				<p class="cst-txt-lightgray">Ne soudoyez plus les agents de police à chaque poste d'inspection. Mettez de
+																																			                côté cet argent pour financer les besoins urgents de votre voiture.</p>
+			</div>
+			<div class="mx-md-4 m-2 m-md-3 my-4 p-1 pb-3 p-md-3 each-avtg col-5 col-md-2">
+				<!-- <div class="m-auto d-flex position-relative align-items-center justify-content-center card-number rounded-circle">
+					4</div> -->
+				<h5 class="cst-txt-lightblue h-25 mb-3 m-md-0 cst-fw-5 h6 text-primary text-center">Eviter <br> les pénalités</h5>
+				<p class="cst-txt-lightgray">Suivez l'échéance pour renouveler la VT dans les délais. Si vous êtes occupé,
+																																			                demandez un chauffeur.</p>
+			</div>
+		</div>
+
+		<p class="py-3 px-5 m-0 cst-txt-lightgray cst-fs-sm">Vous n'avez plus d'excuses à donner lors des contrôles
+																					        routiers.</p>
+
+		<a class="btn my-3 px-4 custom-bg-skyblue text-decoration-none text-white btn-style py-2  " href="/account">Planifiez la
+			<span class="d-inline d-md-none">
+				VT
+			</span>
+			<span class="d-none d-md-inline">
+				visite technique 
+			</span>dès  maintenant</a>
+
+	</section>
+
+	<!-- Utilisateurs cible -->
+	<section class="main-section py-3 py-md-0 target cst-bg-darkgray">
+		<div class="separator py-3 py-md-5 px-3 text-center">
+			<p class="fs-1 text-white pm-0 separator-title cst-txt-gray">À qui s'adressent nos services ?</p>
+			<p class="cst-fs-sm m-0 cst-txt-lightgray px-4">Les profils utilisateur qui peuvent ouvrir un compte Wouigo</p>
+		</div>
+		<div class="container row m-auto px-lg-5">
+			<div class="position-relative col-12 col-md-6 bules d-none d-md-block">
+				<img src="{{asset('/img/bloc_image1.png')}}" alt="Logo_Kingo" style="width: 101%;"/>
+
+			</div>
+			<div class="col-12 col-md-6">
+				<ul>
+					<li>
+						<p class="cst-txt-ltblue cst-fs-5 m-0">Les Particuliers</p>
+						<p class="cst-txt-lightgray cst-fs-5">Vous pouvez ouvrir un compte si vous êtes propriétaire d'un ou
+																																																	                        plusieurs véhicule(s).
+						</p>
+					</li>
+					<li>
+						<p class="cst-txt-ltblue cst-fs-5 m-0">Les Sociétés</p>
+						<p class="cst-txt-lightgray cst-fs-5">Créez un compte gestionnaire pour planifier et effectuer la
+																																																	                        visite technique de vos véhicules de fonction et administratifs.
+						</p>
+					</li>
+					<li>
+						<p class="cst-txt-ltblue cst-fs-5 m-0">Les Auxiliaires</p>
+						<p class="cst-txt-lightgray cst-fs-5">Utilisez notre plateforme si vous êtes un(e) secrétaire
+																																																	                        particulier(e) pour suivre et faire la visite technique des voitures privées de votre employeur.
+						</p>
+					</li>
+				</ul>
+				<a href="#" class="d-block d-md-inline-block m-auto mx-md-4 my-4 my-md-5 px-4 btn btn-style py-2 text-white custom-bg-skyblue">Ouvrez un compte</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Paiement -->
+	<section class="main-section guarantee py-4">
+		<div class="separator py-3 py-md-5 px-3 text-center">
+			<p class="fs-1 pm-0 separator-title cst-txt-gray mb-0 mb-md-0">Pourquoi nous faire confiance ?</p>
+			<p class="cst-fs-sm m-0 cst-txt-lightgray px-4">Ce qui fait notre force et de nous l'unique innovateur</p>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<img src="{{asset('/img/icons8-driver-license-160.png')}}" alt="Logo_ecriture_bleu_sans_fond" class="tt-position mb-3"/>
+
+					<h3 class="text-center tt-colors">Professionalisme</h3>
+					<p class="text-center cst-txt-lightgray">
+						Afin de vous offrir des service
+						<br>
+						de qualité, nous sélectionnons
+						<br>
+						les meilleur collaborateur
+						<br>
+						pour conduit vos voiture</p>
+				</div>
+
+				<div class="col-4">
+					<img src="{{asset('/img/icons8-silent-100.png')}}" alt="Logo_ecriture_bleu_sans_fond" class="tt-position mb-3"/>
+
+					<h3 class="text-center tt-colors">Rapidité</h3>
+					<p class="text-center cst-txt-lightgray">
+						Arrivée et départ à l'heure pour la
+						<br>
+						mission.Par d'escale éffectuer avec
+						<br>
+						votre véhicule de reception. Vous
+						<br>
+						ne verrez pas le temps passé
+					</p>
+				</div>
+				<div class="col-4">
+					<img src="{{asset('/img/icons8-speed-100.png')}}" alt="Logo_ecriture_bleu_sans_fond" class="tt-position mb-3"/>
+					<h3 class="text-center tt-colors">Discrétion</h3>
+					<p class="text-center cst-txt-lightgray">
+						Confierz-nous vos automobiles
+						<br>
+						sans craindre pour votre identité.
+						<br>
+						Nous vous sevons avec discrétion,
+						<br>
+						car vous êtes un VIP.
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<a href="/account" class="mx-auto my-2 my-md-5 d-block px-4 py-2 text-white  btn btn-style custom-bg-skyblue">Essayez Wouigo maintenant</a>
+	</section>
+
+	<!-- Comment procéder -->
+	<section class="main-section py-5 py-md-2 py-md-5 price cst-bg-lightblue">
+		<div class="separator pb-3 pb-md-5 text-center">
+			<p class="fs-1 pm-0 separator-title cst-txt-gray mb-0 mb-md-0">Comment ça marche ?</p>
+			<p class="cst-fs-sm m-0 cst-txt-lightgray px-4">Le mode d'emploi lors de la première utilisation</p>
+		</div>
+		<div class="container row m-auto p-0 text-center justify-content-around">
+			<div class="col-4 col-md-3">
+				<p class="fs-3 my-0 cst-txt-gray">1</p>
+				<div class="col-5 col-md-8 mx-auto my-2 line"></div>
+				<p class="cst-fs-5 cst-txt-lightgray">Créez gratuitement un compte</p>
+			</div>
+			<div class="col-4 col-md-3">
+				<p class="fs-3 my-0 cst-txt-gray">2</p>
+				<div class="col-5 col-md-8 mx-auto my-2 line"></div>
+				<p class="cst-fs-5 cst-txt-lightgray">Enregistrez vos véhicules à l'aide des cartes grise</p>
+			</div>
+			<div class="col-4 col-md-3">
+				<p class="fs-3 my-0 cst-txt-gray">3</p>
+				<div class="col-5 col-md-8 mx-auto my-2 line"></div>
+				<p class="cst-fs-5 cst-txt-lightgray">Souscrivez aux services qu'il vous faut</p>
+			</div>
+		</div>
+		<a href="#" class="mx-auto mt-3 mt-md-5 d-block px-4 py-2 text-white btn btn-style custom-bg-skyblue">Essayez Wouigo maintenant</a>
+	</section>
+
+	<!-- Tarifs -->
+	<section class="main-section atouts py-3 py-md-0">
+		<div class="separator py-3 py-md-5 px-3 text-center">
+			<p class="fs-1 pm-0 separator-title cst-txt-gray mb-0 mb-md-0">Quels sont nos tarifs ?</p>
+			<p class="cst-fs-sm m-0 cst-txt-lightgray px-4">Les prix à payer pour souscrire à nos services.</p>
+		</div>
+		<div class="container row m-auto p-0 px-md-5 text-center justify-content-around">
+			<div class="col-6 col-lg-4 px-3 px-md-4">
+				<div class="p-2 p-md-3 px-md-4 each-atouts">
+					<div class="h-md-25">
+						<p class="fs-3 my-3 cst-txt-blue">Kingo</p>
+						<p style="height:1em"></p>
+					</div>
+					<p class="cst-txt-orange cst-fs-h3">3 000 F XOF</p>
+					<p class="cst-fs-4 my-2 cst-txt-gray">TTC/véhicule</p>
+					<p class="cst-fs-sm m-0 cst-txt-lightgray">SMS + APPEL</p>
+					<p class="mx-auto my-2 w-50" style="border-top:1px solid #ABABAB"></p>
+					<p class="cst-fs-5 cst-txt-lightgray">service disponible pour toutes les catégories de véhicules à moteur</p>
+					<a class="cst-bg-tarif custom-bg-skyblue text-white " href="{{path('app_info_vehicule')}}">Suive l'echéance</a>
+				</div>
+				<p class="mx-0 w-100 center mx-md-auto my-3 w-75 cst-fs-sm cst-txt-lightgray"></p>
+			</div>
+			<div class="col-6 col-lg-4 px-3 px-md-4">
+				<div class="p-2 p-md-3 px-md-4 each-atouts">
+					<div class="h-md-25">
+						<p class="fs-3 my-3 cst-txt-blue">SOS Driver</p>
+						<p style="height:1em">à partir de</p>
+					</div>
+					<p class="cst-txt-orange cst-fs-h3">10 000 F XOF</p>
+					<p class="cst-fs-4 my-2 cst-txt-gray">TTC/véhicule</p>
+					<p class="cst-fs-sm m-0 cst-txt-lightgray">CHAUFFEUR + SERVICE RAPPEL</p>
+					<p class="mx-auto my-2 w-50" style="border-top:1px solid #ABABAB"></p>
+					<p class="cst-fs-5 cst-txt-lightgray">chauffeur disponible uniquement pour les véhicules privés etlégers</p>
+					<a class="cst-bg-tarif custom-bg-skyblue text-white" href="{{path('app_info_vehicule')}}">Demander un chauffeur</a>
+				</div>
+				<p class="mx-0 w-100 center mx-md-auto my-3 w-75 cst-fs-sm cst-txt-lightgray">Le tarif est susceptible d'augmenter si le lieu de réception retour change.</p>
+			</div>
+		</div>
+		{# <a href="#" class="mx-auto my-2 my-md-5 d-block px-4 py-2   btn btn-style custom-bg-skyblue">Souscrivez dès   maintenant</a> #}
+	</section>
+
+	<!-- fad -->
+	<section class="main-section py-4 py-md-2 py-md-5 faq cst-bg-darkgray">
+		<div class="separator py-2 text-center">
+			<p class="fs-1 pm-0 separator-title text-white">Questions Fréquentes</p>
+		</div>
+		<div class="mx-auto py-2 col-9 cst-bg-darkgray accordion accordion-flush" id="accordionFlushExample">
+			<div class="cst-bg-darkgray accordion-item">
+				<h2 class="p-1 cst-bg-darkgray accordion-header" id="flush-headingOne">
+					<button class="rounded text-white px-2 cst-bg-blue accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+						Quel est le bon moment pour demander un chauffeur ?
+					</button>
+				</h2>
+				<div id="flush-collapseOne" class="cst-bg-darkgray text-white accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+					<div class="cst-bg-darkgray accordion-body">texte à completer</div>
+				</div>
+			</div>
+			<div class="cst-bg-darkgray accordion-item">
+				<h2 class="p-1 cst-bg-darkgray accordion-header" id="flush-headingTwo">
+					<button class="rounded text-white px-2 cst-bg-blue accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+						Dois-je encore souscrire à Kingo après avoir pris SOS Driver ?
+					</button>
+				</h2>
+				<div id="flush-collapseTwo" class="cst-bg-darkgray text-white accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+					<div class="cst-bg-darkgray accordion-body">texte à completer</div>
+				</div>
+			</div>
+			<div class="cst-bg-darkgray accordion-item">
+				<h2 class="p-1 cst-bg-darkgray accordion-header" id="flush-headingThree">
+					<button class="rounded text-white px-2 cst-bg-blue accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+						Que se passe t-il lorsque notre chauffeur constate l'expiration de votre assurance auto ?
+					</button>
+				</h2>
+				<div id="flush-collapseThree" class="cst-bg-darkgray text-white accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+					<div class="cst-bg-darkgray accordion-body">texte à completer</div>
+				</div>
+			</div>
+			<div class="cst-bg-darkgray accordion-item">
+				<h2 class="p-1 cst-bg-darkgray accordion-header" id="flush-headingFour">
+					<button class="rounded text-white px-2 cst-bg-blue accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+						Quelles sont les voitures que nous considérons comme véhicules légers ?
+					</button>
+				</h2>
+				<div id="flush-collapseFour" class="cst-bg-darkgray text-white accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+					<div class="cst-bg-darkgray accordion-body">texte à completer</div>
+				</div>
+			</div>
+			<div class="cst-bg-darkgray accordion-item">
+				<h2 class="p-1 cst-bg-darkgray accordion-header" id="flush-headingFive">
+					<button class="rounded text-white px-2 cst-bg-blue accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+						Certaines cartes grise ne sont pas en mon nom. Puis-je les enregistrer sur mon compte Wouigo ?
+					</button>
+				</h2>
+				<div id="flush-collapseFive" class="cst-bg-darkgray text-white accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+					<div class="cst-bg-darkgray accordion-body">texte à completer</div>
+				</div>
+			</div>
+			<div class="cst-bg-darkgray accordion-item">
+				<h2 class="p-1 cst-bg-darkgray accordion-header" id="flush-headingSix">
+					<button class="rounded text-white px-2 cst-bg-blue accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+						Je viens de découvrir Wouigo et il reste encore 10 mois pour ma visite technique. Que faire?
+					</button>
+				</h2>
+				<div id="flush-collapseSix" class="cst-bg-darkgray text-white accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+					<div class="cst-bg-darkgray accordion-body">texte à completer</div>
+				</div>
+			</div>
+			<div class="cst-bg-darkgray accordion-item">
+				<h2 class="p-1 cst-bg-darkgray accordion-header" id="flush-headingSeven">
+					<button class="rounded text-white px-2 cst-bg-blue accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+						Pourquoi je n'arrive pas à souscrire à SOS Driver pour certains de mes véhicules ?
+					</button>
+				</h2>
+				<div id="flush-collapseSeven" class="cst-bg-darkgray text-white accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+					<div class="cst-bg-darkgray accordion-body">texte à completer</div>
+				</div>
+			</div>
+			<div class="cst-bg-darkgray accordion-item">
+				<h2 class="p-1 cst-bg-darkgray accordion-header" id="flush-headingHeight">
+					<button class="rounded text-white px-2 cst-bg-blue accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseHeight" aria-expanded="false" aria-controls="flush-collapseHeight">
+						Le service SOS Driver est trop cool. Pouvez-vous me trouver un chauffeur pour mes enfants ?
+					</button>
+				</h2>
+				<div id="flush-collapseHeight" class="cst-bg-darkgray text-white accordion-collapse collapse" aria-labelledby="flush-headingHeight" data-bs-parent="#accordionFlushExample">
+					<div class="cst-bg-darkgray accordion-body">texte à completer</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="container-fluid row d-flex py-2">
+			<div class="col-md-3 col-6 pb-4 cst-fs-sm cst-txt-gray">
+				<a class="navbar-brand" href="#">
+					<img src="{{asset('/img/Logo_nom_mantra_blanc_vertical.png')}} " alt="Logo_ecriture_bleu_sans_fond" width="100px"/>
+				</a>
+			</div>
+
+			<nav class="d-flex align-items-center col-md-6 col-6 row pb-4 cst-fs-sm cst-txt-gray">
+
+				<ul class="cst-effect-link cst-list-style-type m-0 p-0 text-center ">
+					<li class="min-vw-50 m-2 d-inline-block">
+						<a href="#" class="p-0  position-relative cst-txt-gray  text-decoration-none d-inline-block cst-font-arial ">Nous contacter</a>
+					</li>
+					<li class="min-vw-50 d-inline-block m-2">
+						<a href="#" class="p-0  position-relative cst-txt-gray text-decoration-none d-inline-block cst-font-arial">Conditions Générales d'utilisation</a>
+					</li>
+					<li class="min-vw-50 d-inline-block m-2">
+						<a href="#" class="p-0  position-relative cst-txt-gray text-decoration-none d-inline-block cst-font-arial">Condition Générales de ventes</a>
+					</li>
+
+				</ul>
+			</nav>
+
+			<div class="col-md-3  pt-3d-flex flex-column align-items-center justify-content-center pb-4 cst-fs-sm cst-txt-gray">
+				<img src="{{asset('/img/image_moyen_paiement.png')}}" alt="Logo_ecriture_bleu_sans_fond" class="ms-0 d-block w-100 mb-3"/>
+
+				<h3 class=" cst-fs-15-px  fw-bold  text-end">Copyright, Wouigo 2021</h3>
+			</div>
+		</div>
+	</footer>
+
+{% endblock %}

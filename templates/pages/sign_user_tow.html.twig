@@ -1,0 +1,185 @@
+{% extends 'admin_login.html.twig' %}
+
+{% block title %}Login
+{% endblock %}
+
+{% block body %}
+	<div class="cst-full-hs">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-6  login-banner">
+					<section class="showcase">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-12 text-center">
+									<img src="{{asset('/img/Logo_Wouigo.jpg')}} " alt="Logo_Wouigo"/>
+
+									<p class="lead text-center mt-3">Nous aidons les particuliers et entreprises
+										<br>
+										a faire la visite techique de leurs véhicules
+										<br>
+										dans les delais et sans tracas.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-6 ">
+					<main>
+						<form action="{{path('app_sign_user_update')}}" method="POST">
+							<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+							<img src="{{asset('/img/Logo_ecriture_bleu_sans_fond.svg')}} " alt="Logo_ecriture_bleu_sans_fond" width="163" class="loginImageCenter d-block" style="margin: 2% 21% auto auto;"/>
+
+							<div id="login" class="login p-0 cst-m-auto-paddin-auto" style="width:32rem ;margin: 1rem auto ; height: auto">
+								<div class="containe mt-5">
+									<div class="row centerlogin cst-w-auto">
+
+										<div class="col-12">
+											<div class="m-auto text-center">
+												<h3 class="cst-fs-15-px text-secondary">Informations utilisateur</h3>
+											</div>
+										</div>
+
+										<div class="col-sm-12 col-md-4 col-lg-4  mt-2">
+											<div class="form-group">
+												<label for="exampleInputPassword1" class="cst-txt-blues logintext cst-fw-normal">Status
+												</label>
+												<select class=" form-control form-select-sm " aria-label=".form-select-sm example">
+													<option selected></option>
+													<option value="1">One One</option>
+												</select>
+											</div>
+
+
+										</div>
+
+										<div class="col-sm-12 col-md-4 col-lg-4  mt-2"></div>
+
+										<div class="col-sm-12 col-md-4 col-lg-4  mt-2">
+											<div class="form-group">
+												<label for="exampleInputPassword1" class="cst-txt-blues logintext cst-fw-normal">Titre
+												</label>
+												<select class=" form-control form-select-sm " aria-label=".form-select-sm example">
+													<option selected></option>
+													<option value="1">One One</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="col-sm-12 col-md-8 col-lg-8  cst-mt-4">
+											<div class="form-group">
+												<label for="exampleInputPassword1" class="cst-txt-blues logintext cst-fw-normal">Nom</label>
+												<input class="form-control cst-pt-037  " name="email" type="text" required>
+											</div>
+										</div>
+
+										<div class="col-sm-12 col-md-4 col-lg-4  cst-mt-4">
+											<div class="form-group">
+												<label for="exampleInputPassword1" class="cst-txt-blues logintext cst-fw-normal">Boîte postale</label>
+												<input class="form-control cst-pt-037  " name="email" type="text" required>
+											</div>
+										</div>
+
+										<div class="col-sm-12 col-md-4 col-lg-4  cst-mt-4">
+											<div class="form-group">
+												<label for="exampleInputPassword1" class="cst-txt-blues logintext cst-fw-normal">Téléphone fixe
+												</label>
+												<input class="form-control cst-pt-037  " name="email" type="text" required>
+											</div>
+										</div>
+
+										<div class="col-sm-12 col-md-4 col-lg-4  cst-mt-4">
+											<div class="form-group">
+												<label for="exampleInputPassword1" class="cst-txt-blues logintext cst-fw-normal">Téléphone mobile1
+												</label>
+												<input class="form-control cst-pt-037  " name="email" type="text" required>
+											</div>
+										</div>
+
+										<div class="col-sm-12 col-md-4 col-lg-4  cst-mt-4">
+											<div class="form-group">
+												<label for="exampleInputPassword1" class="cst-txt-blues logintext cst-fw-normal">Téléphone mobile2
+												</label>
+												<input class="form-control cst-pt-037  " name="email" type="text" required>
+											</div>
+										</div>
+
+										<div class="col-sm-12 col-md-3 col-lg-3  cst-mt-4">
+											<div class="form-group">
+												<label for="exampleInputPassword1" class="cst-txt-blues logintext cst-fw-normal">RCCM
+												</label>
+												<input class="form-control cst-pt-037  " name="email" type="text" required>
+											</div>
+										</div>
+
+										<div class="col-sm-12 col-md-3 col-lg-3  cst-mt-4">
+											<div class="form-group">
+												<label for="exampleInputPassword1" class="cst-txt-blues logintext cst-fw-normal"> IFU
+												</label>
+												<input class="form-control cst-pt-037  " name="email" type="text" required>
+											</div>
+										</div>
+
+										<div class="col-sm-12 col-md-3 col-lg-6  cst-mt-4">
+											<div class="form-group">
+												<label for="exampleInputPassword1" class="cst-txt-blues logintext cst-fw-normal">Email de l'éntreprise 
+												</label>
+												<input class="form-control cst-pt-037  " name="email" type="text" required>
+											</div>
+										</div>
+
+
+										<div class="col-sm-12 col-md-6 col-lg-6  cst-mt-4">
+											<div class="form-group">
+												<label for="exampleInputPassword1" class="cst-txt-blues logintext cst-fw-normal">Nom (gestionnaire de compte) 
+												</label>
+												<input class="form-control cst-pt-037  " name="email" type="text" required>
+											</div>
+										</div>
+
+										<div class="col-sm-12 col-md-6 col-lg-6  cst-mt-4">
+											<div class="form-group">
+												<label for="exampleInputPassword1" class="cst-txt-blues logintext cst-fw-normal">Prenom (gesionnaire de compte) 
+												</label>
+												<input class="form-control cst-pt-037  " name="email" type="text" required>
+											</div>
+										</div>
+
+										<div class="col-sm-12 col-md-6 col-lg-5 cst-mt-4">
+											<div class="form-group">
+												<label for="exampleInputPassword1" class="cst-txt-blues logintext cst-fw-normal">Téléphone pro
+												</label>
+												<input class="form-control cst-pt-037  " name="email" type="text" required>
+											</div>
+										</div>
+
+										<div class="col-sm-12 col-md-6 col-lg-7 cst-mt-4">
+											<div class="form-group">
+												<label for="exampleInputPassword1" class="cst-txt-blues logintext cst-fw-normal">Email (getionnaire de compte) 
+												</label>
+												<input class="form-control cst-pt-037  " name="email" type="text" required>
+											</div>
+										</div>
+
+										<div class="col-12 mt-2">
+											<div class="input-group loginButton mb-3" style="top: 0px;" >
+												<span class="input-group-btn loginTaille">
+													<input type="submit" value="Suivant" class="btn seConnecter" style="width: 7rem !important;">
+												</span>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+							</div>
+						</form>
+					</main>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}

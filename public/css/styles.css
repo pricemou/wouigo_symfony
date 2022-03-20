@@ -1,0 +1,843 @@
+/* Selects the root element of the document:
+   <html> in the case of HTML */
+:root {
+    --wouigo-blue: rgb(56, 182, 255);
+    --wouigo-gris: #6f6b6b;
+    --fs-gris: "#484646";
+    --wouigo-orange: #f8dd98;
+    --color-fonce: #0274AF;
+  --wouigo-White: white;
+  --color-jaune: #fec338;
+
+}
+
+body {
+    font-size: 0.8rem;
+}
+
+/* custom font size */
+.cst-fs-sm {
+    font-size: 13px !important;
+}
+
+.cst-cursor-point{
+    cursor: pointer; 
+}
+
+.cst-display-6 {
+    font-size: calc(0.9rem + 1.5vw);
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.cst-tt-initial{
+    text-transform: initial !important;
+  }
+.cst-fw-5{
+    font-weight: 500 !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+  }
+.cst-ml-8 {
+    margin-left: 8% !important;
+  }
+  
+
+.cst-fs-5 {
+    font-size: 1.1em;
+}
+
+.cst-fs-4 {
+    font-size: 1.2em;
+}
+
+.cst-fs-21{
+    font-size: 21px;
+    color: #6b6b6a;
+}
+
+.cst-fs-1 {
+    font-size: calc(1.375rem + 1.5vw)!important;
+}
+.cst-fs-15-px {
+    font-size: 15px;
+}
+    
+
+.cst-fs-h3 {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.cst-fs-img-center{
+    margin: auto;
+    display: block;
+}
+
+.cst-fs-sm {
+    font-size: 11px;
+}
+
+
+/* custom font color */
+
+.cst-txt-lightgray {
+    color: #ABABAB;
+}
+.cst-font-arial{
+    font-family: Arial;
+}
+
+.cst-txt-v-lightgray {
+    color: gainsboro;
+}
+
+.cst-txt-gray {
+    color: #707070;
+}
+
+.cst-txt-lightblue {
+    color: #5b5b5b;
+}
+
+.cst-list-style-type{
+    list-style-type: none;
+}
+
+.cst-txt-ltblue,
+::marker {
+    color: #A5D2FF;
+}
+
+.cst-txt-blue {
+    color: var(--wouigo-blue);
+}
+
+.cst-txt-blues {
+    color: #4A8AC9;
+}
+
+.cst-border-blue {
+    border: 1px solid  #4A8AC9;
+    color: #adadad;
+}
+
+.cst-txt-orange {
+    color: #ff741c;
+}
+
+
+/* custom background */
+
+.cst-bg-blue {
+    background-color: #4A8AC9;
+}
+
+.cst-bg-lightblue {
+    background-color: #EEF7FF;
+}
+
+.cst-bg-darkgray {
+    background-color: var(--wouigo-gris);
+}
+
+.cst-bg-l .separator-title {
+    font-weight: 600;
+}
+
+.cst-color-bleu{
+    font-size: 16px;
+    color: #0274b0;
+}
+
+.cst-fw-500 {
+    font-weight: 500;
+}
+
+.cst-bg-body{
+    background-color: #f6fbff;
+}
+
+/* hauter */
+
+.cst-height-3{
+    height: 3px !important
+}
+
+/* custom border 1px solid */
+
+.cst-border-solid-blue{
+    border: 1px solid var(--wouigo-blue)
+}
+.cst-bd-sd-orange{
+    border: 1px solid var(--wouigo-orange);
+}
+.cst-bd-sd-bleu{
+  border: 1px solid #86bae3!important;
+}
+/* custom width, height */
+
+.cst-w-max-content {
+    width: max-content;
+}
+
+.cst-btn-white {
+    border: 1px solid #38B6FF;
+    border-radius: 2em;
+}
+
+.cst-btn-blue {
+    background-color: #38B6FF;
+    border-radius: 2em;
+    font-size: 1em;
+}
+
+.cst-border{
+    border: 1px solid #86bae3!important;
+}
+
+@media (max-width: 880px) {
+    .cst-full-h {
+        height: 38vh;
+    }
+}
+
+
+
+.each-avtg {
+    box-shadow: 0 4px 5px rgb(80 180 239);
+    border-radius: 1rem;
+}
+
+.target .bules {
+    min-height: 20em;
+}
+
+.target .bules>div {
+    width: 10em;
+    height: 10em;
+}
+
+.target .l-bules {
+    background-color: cadetblue;
+    left: 15%;
+}
+
+.target .m-bules {
+    background-color: antiquewhite;
+    left: 35%;
+    bottom: 20%;
+    z-index: 1;
+}
+
+.target .r-bules {
+    background-color: darkgray;
+    right: 15%;
+    top: 10%;
+}
+
+.each-atouts {
+    box-shadow: 0 7px 7px rgb(255 116 28 / 80%);
+    border-radius: 1rem;
+}
+
+.grayline {
+    border: 1px solid;
+    opacity: 0.3;
+}
+
+.guarantee-indicator {
+    box-shadow: 0 5px 6px #707070;
+    border-radius: 1em;
+    width: 5em;
+    height: 5em;
+}
+
+.card-number {
+    border: 4px solid #5dc3ff;
+    width: 3em;
+    height: 3em;
+    font-weight: bold;
+    color: #5dc3ff;
+    bottom: 1.5em;
+}
+
+.line {
+    border-top: 3px solid #4A8AC9;
+}
+
+.separator-title {
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #4A8AC9;
+    font-weight: 500;
+}
+
+.accordion-button {
+    font-weight: 500;
+}
+
+.accordion-button::after {
+    background-color: aliceblue;
+}
+
+.login {
+    border: 1px solid #38B6FF;
+    border-radius: 2em;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+    /* custom font size */
+    .cst-display-6 {
+        font-size: calc(1.375rem + 1.5vw);
+    }
+    .cst-fs-sm {
+        font-size: 13px !important;
+    }
+    .cst-fs-5 {
+        font-size: 1.25rem;
+    }
+    .cst-fs-4 {
+        font-size: calc(1.275rem + .3vw) !important;
+    }
+    .cst-fs-1 {
+        font-size: calc(1.375rem + 1.5vw)!important;
+    }
+    .cst-fs-h3 {
+        font-size: calc(1.3rem + .6vw);
+    }
+    .target .bules>div {
+        width: 10em;
+        height: 10em;
+    }
+    .target .l-bules {
+        top: 5em;
+    }
+    .target .m-bules {
+        left: 4em;
+        top: 13.5em;
+    }
+    .target .r-bules {
+        right: 2em;
+        top: 7.5em;
+    }
+}
+
+@media (min-width: 992px) {
+    .target .l-bules {
+        top: 2em;
+    }
+    .target .bules>div {
+        width: 14em;
+        height: 14em;
+    }
+    .target .m-bules {
+        left: 6em;
+        bottom: 6.5em;
+    }
+    .target .r-bules {
+        right: 4em;
+        top: 5em;
+    }
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+/* -----------------------------homme Header-------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+
+
+header {
+    background-color: white;
+  }
+  
+  .cst-full-h {
+    height: 100vh;
+  }
+  
+  .tt-colors{
+    font-size: 13px;
+    color: #198dd0;
+  }
+  
+  .tt-position{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 22%;
+  }
+  
+  
+  .header-navbar {
+    z-index: 1;
+  }
+  
+  #create-account {
+    background-color: #38B6FF;
+    border-radius: 2em;
+  }
+  
+  header .nav-link {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .navbar-light .navbar-nav .nav-link{
+    font-size: 12px;
+  }
+  #create-account a {
+    color: white !important;
+  }
+  
+  /* banniere */
+  .home-banner {
+    background: url('/img/Image de fond - 1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  
+  
+  .sucription-banner {
+    z-index: 1;
+    background-color: #bbe1fe66;
+  
+  }
+  
+  .sign-banner .banner-content {
+    z-index: 1;
+    background: url('/img/Image de fond - 1.png');
+  
+  }
+  
+  .banner-content h3 {
+    font-size: 1.7rem;
+    font-family: inherit;
+    font-weight: 400;
+    color: var(--color-fonce);
+  }
+  
+  .banner-content h3 span {
+    color: var(--color-jaune);
+  }
+  
+  .banner-content p {
+    font-family: SegoeUI, "Segoe UI";
+    color: #877f7f;
+    font-size: 13px;
+  }
+  
+  .navbar-toggler {
+    height: fit-content;
+  }
+  
+  .btn-style {
+    width: fit-content;
+    border-radius: 5rem;
+    font-size: 14px;
+    min-width: fit-content;
+  }
+  
+  
+  
+  .custom-bg-white {
+    color: rgb(56, 182, 255);
+    background-color: white;
+    border: 1px solid #3ab5fc
+  }
+  
+  .banner .bules {
+    position: absolute;
+    top: 0;
+  }
+  
+  .banner .bules>div {
+    display: inline-block;
+    border-radius: 50%;
+    position: inherit;
+  }
+  
+  .banner .bules>div:first-child {
+    width: 25em;
+    height: 25em;
+    background-color: rgb(195, 39, 232);
+    left: -12px;
+    top: -2em;
+  }
+  
+  .banner .bules>div:nth-child(2) {
+    width: 10em;
+    height: 10em;
+    background-color: rgb(165, 210, 255);
+    opacity: 0.59;
+    left: 12.7em;
+    top: 0.5em;
+  }
+  
+  .banner .bules>div:nth-child(3) {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(165, 210, 255);
+    opacity: 0.36;
+    top: 14em;
+    left: 16em;
+  }
+  
+  .banner .bules>div:nth-child(4) {
+    width: 25em;
+    height: 25em;
+    background-color: rgb(165, 210, 255);
+    opacity: 0.73;
+    left: 21.8em;
+    top: -5em;
+  }
+  
+  .banner-content p {
+    font-size: 13px;  
+}
+
+    @media (min-width: 320px) and (max-width: 437px) {
+        .cst-bg-tarif{
+           font-size: 0.5rem !important; 
+        }
+    }
+
+
+
+  
+  @media (min-width: 768px) {
+    .banner-content p {
+      font-size: 20px;
+    }
+  
+    .banner-content h3 {
+      font-size: 2.3rem;
+    }
+  
+    .btn-style {
+      font-size: 1.1rem;
+    }
+  }
+  
+  .infoPreso {
+    width: 75%;
+    border-radius: 13px;
+    padding: 26px;
+    box-shadow: 0px 3px 5px 2px #86bae3;
+  }
+  
+
+.custom-bg-skyblue {
+    background-color: var(--wouigo-blue);
+  }
+
+  .custom-bg-skyblue:hover {
+    color: white;
+    text-align: none;
+  }
+  
+
+  @media (max-width: 870px) {
+    .cst-sucription-displayenone {
+       display: none
+   }
+  
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* -----------------------------Footer-------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+  .cst-effect-link a:hover {
+    color: var(--wouigo-blue);
+  }
+  
+  .cst-effect-link a:hover:before {
+    left: 0;
+    width: 100%;
+  }
+
+/* ----------------------------------------------------------------------------------- */
+/* -----------------------------souscription-------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+.cst-sucription-right{
+    border: 1px solid #f8dd98;
+    width: 90%;
+    background-color: white;
+    height: 420px;
+    border-radius: 20px;
+    
+}
+.cst-font-souscription-h2-sm{
+    font-size: 17px;
+    text-align: center;
+    padding: 12px;
+    color: #979b9b;
+}
+.cst-bg-tarif{
+    width: 9rem;
+    border-radius: 9rem;
+    font-size: 14px;
+    border: #3ab5fc;
+    padding: 9px;
+    /* padding-bottom: 6px; */
+    min-width: fit-content;
+}
+.cst-font-souscription-sm{
+    font-size: 13px;
+    text-align: center;
+    padding: 12px;
+    color: #979b9b;
+}
+
+.cst-sucription-sm{
+    border: 1px solid #f8dd98;
+    background-color: white;
+    height: 552px;
+    border-radius: 20px;
+    margin-top: 1px !important;
+}
+
+
+.cst-sucription-left{
+    /* width: 90%; */
+    /* height: 420px; */
+    /* border-radius: 20px; */
+    margin: 0 10%;
+}
+
+.cst-souscription-button{
+    padding: 13px;
+    width: 11rem;
+}
+
+.cst-box-show{
+    box-shadow: 0 7px 7px rgb(255 116 28 / 80%);
+    border-radius: 3rem;
+    width: 51%;
+    padding: 1px;
+}
+.cst-box{
+    width: 51%
+}
+
+
+
+.cst-font-souscription-one{
+    font-size: 17px;
+    text-align: center;
+    padding: 12px;
+    color: #979b9b;
+}
+
+
+.cst-hr-souscription{
+    width: 3rem;
+    margin: auto;
+    height: 6px !important;
+}
+
+.cst-hr-souscription-activate{
+    width: 3rem;
+    margin: auto;
+    height: 6px !important;
+    background: #f6a600;
+    border: 0.5px #ffc91a;
+}
+.cst-soucription-h2-activate{
+    font-size: 28px;
+    color: #d8ac1ded;
+}
+
+
+.cst-soucription-h2{
+    font-size: 28px;
+    color: #979b9b;
+}
+
+
+.cst-soucription-border{
+    border: 1px solid #c0c0c5;
+    padding: 5px;
+    margin: auto;
+    border-radius: 12px;
+    width: 79%;
+    box-shadow: 9px 7px 5px 1px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 5px 3px 4px 1px rgb(0 0 0 / 21%);
+    -moz-box-shadow: 9px 7px 5px 1px rgba(0,0,0,0.21);
+}
+
+.cst-soucription-label{
+    color: #208cf3;
+}
+
+.cst-soucription-id{
+    border: 1px solid #a5def6;
+    background: #08a3e75c;
+    height: 54px;
+    border-radius: 8px;
+}
+
+.cst-txt-blue{
+    color: #3ab5fc!important;
+}
+
+.cst-soucription-input-heure{
+    width: 102%;
+}
+.cst-soucription-input-date{
+    width: 84%;
+}
+.cst-soucription-input-text{
+    font-size: 12px;
+}
+
+.cst-coupon-tab-i{
+    display: none;
+}
+
+.table td, .parking-thead th{
+    border: 0px !important;
+}
+
+
+@media (max-width: 870px) {
+     .cst-sucription-displayenone {
+        display: none
+    }
+   
+}
+
+
+
+@media (max-width: 880px) {
+   
+    .cst-sucription-image{
+        display: block;
+        margin: auto;
+    }
+    .cst-soucription-center{
+        text-align: center;
+    }
+    .navbar-nav{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .ms-0 d-block w-100 {
+        display: block !important;
+        margin: auto;
+        height: auto !important;
+        width: 51% !important;
+        margin-left: 23% !important; 
+    }
+}
+
+@media (min-width: 880px) {
+    .cst-soucription-mobil{
+        display: none;
+    }
+}
+@media (max-width: 880px) {
+    .cst-soucription-pc{
+        display: none;
+    }
+    .cst-soucription-methode{
+        display: none;
+    }
+}
+
+
+.cst-sucription-rights {
+    /* border: 1px solid #f8dd98; */
+    width: 90%;
+    background-color: white;
+    /* height: 590px; */
+    border-radius: 20px;
+}
+
+.cst-sucriptions-sm {
+    border: 1px solid #f8dd98;
+    background-color: white;
+    /* height: 396px; */
+    border-radius: 20px;
+    margin-top: 1px !important;
+}
+
+.cst-soucription-tab{
+    padding: 0%;
+    margin: 7px;
+    border: 1px solid #3ab5fc;
+    /* width: 52%; */
+    border-radius: 5px;
+    margin: auto;
+}
+
+.cst-soucription-tabs{
+    width: 74%;
+    padding: 0%;
+    margin: 7px;
+    border: 1px solid #3ab5fc;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.cst-soucription-tab-text{
+    font-size: 19px;
+    color: #c3c2c0;
+    text-align: initial;
+}
+.cst-soucription-tab-soustotal{
+    font-size: 21px;
+    color: #6b6b6a;
+}
+
+.cst-soucription-tab-left{
+    text-align: end;
+}
+
+.cst-soucription-tab-i{
+    border: 1px solid #c3c2c0;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.cst-soucription-confirmation{
+    font-size: 15px;
+    color: #919293;
+}
+
+@media (max-width: 1200px) {}
+
+
+@media (max-width: 880px) {
+   
+    .cst-image{
+        display: none;
+    }
+
+    .cst-full-h {
+        height: 100% !important;
+        margin-top: 35px;
+    }
+}
+
+

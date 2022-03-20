@@ -1,0 +1,207 @@
+{% extends 'admin_navBar.html.twig' %}
+
+{% block title %}Dashbord client!
+{% endblock %}
+
+{% block body %}
+	<div class="content-wrapper">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-xl-9 col-lg-9 col-md-12   col-sm-12 ">
+					<div class="row mt-4 ">
+						<div class="col-xl-12 col-sm-12 ">
+							<div class="row">
+								<div class="col-xl-8 col-sm-12 ">
+									<div class="apropos mb-4 row">
+										<div class="col-6">
+											<h2>PARAMETRE</h2>
+										</div>
+										<div class="col-6 text-right">
+											<h7>Réduire</h7>
+										</div>
+
+										<p class="m-0">
+											Retrouvez ici, les détail de votre compte client.<br>
+											Vous pouvez actualisez les donnée de votre profil utilisateur, le moyen
+											<br>
+											de paiement ainsi que le lieu reception par default de vos véhicules.<br>
+
+										</p>
+									</div>
+
+									<div class="apropos mb-4  row" style="background: aliceblue !important;">
+										<div class="col-8">
+											<h3 class="cst-fs-15-px text-secondary"><strong class="cst-fs-21 ">Profil Utilisateur </strong>: Particulier</h3>
+										</div>
+										<div class="col-4 text-right ">
+											<h7 class="bg-secondary">Afficher</h7>
+										</div>
+									</div>
+
+									<div class="apropos mb-4 row" style="background: aliceblue !important;">
+										<div class="col-8">
+											<h3 class="cst-fs-15-px text-secondary"><strong class="cst-fs-21 ">Moyens de paiement </strong></h3>
+										</div>
+
+										<div class="col-4 text-right ">
+											<h7 class="">Réduire</h7>
+										</div>
+
+										<div class="col-12">
+											<div class="h-25 p-2 mb-3" style="background-color: antiquewhite;">
+												<p>PAR Defaut (choississez le moyen principal pour payer sur Wouigo)</p>
+											</div>
+
+											<div class="h-25 p-1 mb-3 row" >
+												<div class="col-6">
+													<div class="form-check">
+														<input class="form-check-input"  id="mtnMonney" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+														<label class="" for="flexRadioDefault1">
+														  MTN Mobile Monney
+														</label>
+													  </div>
+													  <div class="form-check">
+														<input class="form-check-input" id="moovMonney" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+														<label class="" for="flexRadioDefault2">
+															Moov Mobile Money
+														</label>
+													  </div>
+												</div>
+												<div class="col-6">
+													<div id="sendNumero" class="form-check mt-2 d-none">
+														<input class="form-control form-control-sm p-1" type="text" placeholder="">
+													  </div>
+												</div>
+												
+											</div>
+										</div>
+
+										<div class="col-12">
+											<div class="h-25 p-2 mb-3" style="background-color: antiquewhite;">
+												<p>SECONDAIRE (Le paiement par carte n'est possible pour le moment) </p>
+											</div>
+
+											<div class="h-25 p-1 mb-3 row" >
+												<div class="col-6">
+													<div class="form-check">
+														<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+														<label class="" for="flexRadioDefault1">
+														  MTN Mobile Monney
+														</label>
+													  </div>
+													  <div class="form-check">
+														<input class="form-check-input moovMonney" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+														<label class="" for="flexRadioDefault3">
+															Moov Mobile Money
+														</label>
+													</div>
+													
+												</div>
+
+												<div class="col-6">
+													<div class="form-check">
+														<input class="form-check-input visaMonney" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+														<label class="" for="flexRadioDefault3">
+														  Carte VISA
+														</label>
+													  </div>
+													  <div class="form-check">
+														<input class="form-check-input mastercarteMonney" type="radio" name="flexRadioDefault" id="flexRadioDefault3" >
+														<label class="" for="flexRadioDefault4">
+															Carte MASTERCARTE
+														</label>
+													</div>
+												</div>
+
+												<div id="paiementValider" class="col-12 row mt-2 input-group d-none x">
+													<div class="col-6">
+														<span class="input-group-btn float-right">
+															<input type="submit" value="Annuler" class="btn seConnecter bg-dark">
+														</span>
+													</div>
+
+													<div class="col-6">
+														<span class="input-group-btn">
+															<input type="submit" value="Enregistrer" class="btn seConnecter paiementEnregistrer">
+														</span>
+													</div>
+												</div>
+
+												<div id="paiementModifie" class="col-12 row d-none mt-2">
+													<div class="col-12">
+														<span class="input-group-btn float-right">
+															<input type="submit" value="Modifier" class="btn seConnecter">
+														</span>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="apropos  row" style="background: aliceblue !important;">
+										<div class="col-8">
+											<h3 class="cst-fs-15-px text-secondary">LIEU DE RECEPTION DE VOS VEHICULE</h3>
+										</div>
+										<div class="col-4 text-right ">
+											<h7 class="bg-secondary">Afficher</h7>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="col-xl-8 col-sm-12 ">
+									
+								</div>
+								
+							</div>
+						</div>	
+					</div>
+				</div>
+
+				<div class="col-lg-3 notification">
+					<div class="row mt-4">
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6>FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6>FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6>FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6>FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Icon Cards-->
+
+
+		</div>
+		<!-- /cards -->
+		<h2></h2>
+
+		<!-- /.container-fluid-->
+	</div>
+{% endblock %}

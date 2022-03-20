@@ -1,0 +1,672 @@
+/* YOUR CUSTOM CSS */
+
+:root{
+  --color-blue: #4A8AC9;
+  --color-secondary: #868e96;
+  --color-verte-reduire: #31f714;
+  --pane-padding: 5px 42px;
+  --orange : #e8801d;
+  --color-bleu: #3ab5fc;
+}
+a{
+  color: var(--color-blue);
+}
+.text-decoration-underline{
+  text-decoration: underline;
+}
+.a-hover:hover{
+  color: white;
+}
+
+.cst-border-right{
+  border-right: 1px solid white;
+}
+.cst-vertical-align-baseline{
+  vertical-align: baseline !important;
+}
+
+.seConnecter{
+    font-size: 13px;
+    border-radius: 14px;
+    box-shadow: 5px 6px 10px 0px rgb(119 119 119 / 34%);
+    -moz-box-shadow: 5px 6px 10px 0px rgba(119, 119, 119, 0.34);
+    -webkit-box-shadow: 5px 6px 10px 0px rgb(119 119 119 / 34%);
+    color: #fff;
+    background-color: #3ab5fc;
+    border-color: #3ab5fc;
+}
+.cst-ff-sans-serif{
+  font-family: sans-serif;
+}
+.list-style-type-none{
+  list-style-type:none
+}
+.cst-fs-12 {
+  font-size:12px !important;
+}
+.cst-width-157{
+  width: 157px !important
+}
+
+.text-end{
+  text-align: end !important;
+}
+
+.cst-fs-15-px {
+  font-size: 15px !important; 
+}
+
+.cst-fs-21{
+  font-size: 21px;
+}
+.cst-fs-14{
+  font-size: 14px;
+}
+
+.cst-fs-17{
+  font-size: 17px !important;
+}
+
+.cst-fs-10{
+  font-size: 10px !important;
+}
+.cst-fs-11 {
+  font-size:11px !important;
+}
+.cst-fs-9 {
+  font-size:9px !important;
+}
+
+a .close-modal{
+  display: none;
+}
+
+.cst-fw-4{
+  font-weight: 400;
+}
+
+.display-none{
+  display: none !important;
+}
+
+.nomConnecter{
+    font-size: 14px;
+    padding: 9px;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.ligne{
+    padding: 1em;
+    padding-left: 0px;
+}
+
+/* ----------------------------navBar--------------------------------- */
+/* navBar */
+.navbar-dark .navbar-toggler {
+  color: rgb(58 181 252);
+  border-color: rgb(58 181 252);
+  background: #3ab5fc;
+}
+
+#mainNav{
+    border-bottom: 1px solid #3ab5fc;
+    background-color: #f8f8f8; 
+}
+
+#mainNav .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
+  color: white;
+}
+
+/* .nav-link-text:hover{
+  color: rgb(252, 252, 252);
+} */
+
+@media (max-width: 1000px ) {
+  #mainNav .navbar-collapse .navbar-nav .nav-item .nav-link{
+    color: #888888;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+
+}
+
+/* Tableau de bord */
+.apropos{
+    background: antiquewhite;
+    padding: 17px;
+    border-radius: 15px;
+    margin: -2px;
+}
+
+.apropos h7{
+  font-size: 9px;
+  background-color: #31f714;
+  color: white;
+  padding: 3px;
+  margin: 0px;
+  font-weight: 700;
+  border-radius: 7px;
+  -webkit-box-shadow: 5px 6px 10px 0px rgb(119 119 119 / 34%);
+}
+
+ .cadre{
+  width: 113px;
+  border: 1px solid #f0f8ff;
+  height: 80px;
+  padding: 12px;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 6px 10px 0px rgb(119 119 119 / 34%);
+}
+
+.cadre h6{
+  font-size: 8px;
+  color: var(--color-blue);
+}
+
+.cadre p{
+  font-size: 23px;
+  font-weight: 600;
+}
+
+
+.cardre-notification{
+  width: 15rem;
+  border-radius: 9px;
+  background: white;
+  height: auto;
+  border: 1px solid #3ab5fc;
+  padding: 7px;
+  margin: 0px;
+  -webkit-box-shadow: -3px 3px 10px 0px rgb(12 11 11 / 73%);
+}
+
+.cardre-notification h6{
+  font-size: 12px;
+}
+
+.cardre-notification p{
+  font-size: 12px;
+}
+
+.apropos h2{
+    font-size: 19px;
+    color: var(--color-blue);
+    text-decoration: underline;
+}
+.apropos p{
+    font-size: 11px;
+}
+.apropos p span{
+    font-weight: 500;
+    color: #3ab5fc;
+}
+.medias{
+    font-size: 16px;
+    color: #63676b;
+}
+
+.v-effect-link {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .v-effect-link li {
+    display: inline-block;
+    min-width: 5em;
+    margin: 0 0.5em;
+    background: #3ab5fc2b;
+    height: 66px;
+    width: 55px;
+    border-radius: 34px;
+  }
+
+/* notification */
+.notification{
+    background: aliceblue;
+    top: -15px;
+    height: 527px;
+}
+
+@media (max-width: 1000px ) {
+  .notification{
+   display: none;
+  }
+}
+/* ------------------------------------------------------------- */
+
+/* footer */
+.v-footer-link {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .v-footer-link li {
+    display: inline-block;
+    min-width: 5em;
+    margin: 0 0.5em;
+  }
+
+/* ------------------------------------------------------------- */
+  .dashbord_button{
+    margin: auto;
+  }
+  .button_redure {
+    font-size: 9px;
+    margin-left: 16px;
+    border-radius: 10px;
+    box-shadow: 5px 6px 10px 0px rgb(119 119 119 / 34%);
+    -moz-box-shadow: 5px 6px 10px 0px rgba(119, 119, 119, 0.34);
+    -webkit-box-shadow: 5px 6px 10px 0px rgb(119 119 119 / 34%);
+    color: #fff;
+    background-color: #8adc39;
+    border-color: #8adc39;
+    padding: 2px;
+  }
+
+  .card-header{
+    padding: 7px 4px;
+    background-color: #6370d8;
+    color: white;
+    
+  }
+
+  .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 14px;
+}
+
+.card-header p{
+  margin: 0;
+  line-height: 11px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.card-width{
+  max-width: 7rem;
+}
+
+.revenue{
+    font-size: 18px;
+    font-weight: 600;
+    color: #888888;
+}
+
+.mission{
+  font-size: 18px;
+    font-weight: 600;
+    color: #fd2727;
+}
+
+.missionE{
+  font-size: 18px;
+  font-weight: 600;
+  color: #33fd27;
+}
+.card-header{
+  padding: 10px 4px;
+}
+
+.sinistre{
+  font-size: 18px;
+  font-weight: 600;
+  color: #c1bbbb;
+}
+.perfomance {
+  line-height: 23px;
+  font-size: 16px;
+}
+
+.percontente{
+    border-radius: 10px;
+    border: 1px solid #38b6ff;
+    background-color: #38b6ff14;
+    height: 34px;
+    width: 109%;
+    margin: 0px;
+    padding: 7px;
+}
+
+.marge{
+  margin-left: 0%;
+  width: 91%;
+}
+
+
+.percontente div div {
+  text-align: end;
+  font-size: 12px;
+}
+.percontente div div span{
+  color: #e8801d;
+  font-weight: 400;
+}
+
+
+@media (max-width: 1000px ) {
+  .marge{
+    margin-left: 3%;
+    width: 88%;
+  }
+}
+
+
+
+@media (min-width: 1536px ) {
+  .marge{
+    margin-left: -2%;
+  }
+  .percontente{
+    width: 95%;
+    margin-left: 53px;
+  }
+  
+}
+/* ----------------------login--------------------------------------- */
+
+/* Dashbord-compte */
+.tt-information li{
+  color: var(--color-blue);
+  font-size: 12px;
+  line-height: 30px;
+}
+
+/* login */
+
+
+.login_input{
+  border: 1px solid #3ab5fc;
+  border-radius: 6px;
+  background: white;
+  width: 96%;
+  padding: 4px;
+  padding: 10px;
+  font-size: 12px;
+}
+.centerlogin{
+  margin: auto;
+  width: 91%;
+  padding: 5px;
+}
+
+label {
+  margin-bottom:0;
+}
+.logintext{
+  font-size: 11px;
+  color: #3ab5fc;
+}
+.loginImageCenter{
+  width: 60%;
+ 
+  height:56px;
+}
+.loginButton{
+  margin: auto;
+  top: 21px;
+  left: 91%;
+}
+.loginTaille{
+  /* width: 13px; */
+}
+
+
+
+.login {
+  width: 26rem;
+  margin : 4rem auto;
+  height: 29rem;
+  padding:2rem;
+  border:1px solid #f57d30;
+  border-radius: 22px;
+}
+
+
+.sign_up_two_button{
+  margin: auto;
+  top: 28px;
+  left: 91%;
+}
+
+.sign_up_two{
+  margin: 5rem auto;
+  height: 28rem;
+}
+
+.sign_up_three_button{
+  margin: auto;
+  top: 28px;
+  left: 91%;
+}
+
+.sign_up_three{
+  margin: 5rem auto;
+  height: 25rem;
+}
+.sign_up_four {
+  margin: 5rem auto;
+  height: 27rem;
+}
+
+.sign_up_four{
+  margin: 5rem  auto;
+  top: -1px;
+  left: 37%;
+}
+
+.sign_up_on_center{
+  margin: auto;
+  text-align: center;
+}
+
+.sign_up_four_loginTaille{
+  left: 113px;
+}
+
+.sign_up_four_loginTaille{
+  left: 36%;
+  top: -37%;
+  }
+  
+@media (max-width: 460px ) {
+ 
+  .loginButton {
+      margin: auto;
+      top: 16px;
+      left: 55%;
+  }
+  .logintext {
+    font-size: 9px;
+    color: #3ab5fc;
+  }
+  .sign_up_two_button {
+    margin: auto;
+    top: 28px;
+    left: 50%;
+  }
+  .sign_up_three {
+    margin: 8rem auto;
+    height: 20rem;
+  }
+  .sign_up_three_button {
+    margin: auto;
+    top: 28px;
+    left: 50%;
+  }
+  .sign_up_four {
+    margin: 6rem auto;
+    height: 24rem;
+  }
+}
+
+/* ------------------------Model login----------------------------------- */
+
+.modelcenter{
+  top: 173px;
+  left: 101px;
+}
+.ligne p{
+  line-height: 0.6;
+  text-align: center;
+}
+.modelfrom{
+  padding: 27px;
+  width: 25rem;
+  height: 13rem;
+}
+.forme{
+  padding: 24px;
+  width: 25rem;
+  height: 15rem;
+}
+
+
+@media (max-width: 460px ) {
+  .modelcenter {
+    top: 173px;
+    left: 3%; 
+  }
+
+  .forme {
+    padding: 24px;
+    width: 96%;
+    height: 15rem;
+  }
+
+  .sign_up_four_loginTailles {
+    left: 35%;
+  }
+
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* -----------------------------souscription_confirmation------------------------------ */
+/* ------------------------------------------------------------------------------------ */
+
+.cst-script-confim-image{
+  padding: 55px;
+  width: 54%;
+}
+
+
+
+.login-banner {
+  background: #0000e717;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background: linear-gradient(to bottom, rgba(1, 21, 172, 0.7) 0%,rgba(3, 34, 158, 0.7) 100%) ,  url('/img/Image de fond - 1.png');
+}
+
+.cst-full-hs{
+  height: 80vh;
+}
+
+.showcase{
+  overflow: hidden;
+  color: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  margin: auto;
+}
+.showcase img{
+  border-radius: 4rem;
+    width: 44%;
+}
+
+.showcase p{
+  font-family: inherit;
+  font-size: 14px;
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+/* -----------------------------cardre aroundi------------------------------ */
+/* ------------------------------------------------------------------------------------ */
+
+.cardre_aroundi{
+  padding: 17px;
+  border-radius: 15px;
+  margin: -2px;
+}
+
+
+
+.cardre_aroundi h2{
+  font-size: 19px;
+  color: var(--color-secondary) ;
+  /* text-decoration: underline; */
+}
+
+.cardre_aroundi h2 span{
+  font-size: 12px;
+}
+
+.cardre_aroundi p{
+  font-size: 11px;
+}
+
+.cardre_aroundi .reduire{
+  background-color: var(--color-verte-reduire);
+}
+
+.cardre_aroundi .afficher{
+  background-color: var(--color-secondary);
+}
+.cardre_aroundi h7 {
+  font-size: 9px;
+  color: white;
+  padding: 3px;
+  margin: 0px;
+  font-weight: 700;
+  border-radius: 7px;
+  -webkit-box-shadow: 5px 6px 10px 0px rgb(119 119 119 / 34%);
+}
+
+.cardre_aroundi a{
+  font-size: 14px;
+  color:var(--color-secondary)
+}
+.cardre_aroundi a i{
+  font-size: 19px;
+  color: var(--color-verte-reduire);
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+/* ----------------------------- tableau------------------------------ */
+/* ------------------------------------------------------------------------------------ */
+
+
+#table_parking .table td, .parking-thead th{
+  padding: 0.4rem;
+  vertical-align: top;
+  border: 1px solid #e9ecef;
+}
+
+#parking .parking-tbody td, .parking-thead th{
+  padding: 0.4rem !important;
+  vertical-align: top !important;
+  border: 1px solid #e9ecef !important;
+}
+
+.kindo-soucription{
+  /* background: #e8801d; */
+  padding: 2px 7px 2px 7px;
+  /* font-size: 10px; */
+  color: white;
+  border-radius: 5px
+}

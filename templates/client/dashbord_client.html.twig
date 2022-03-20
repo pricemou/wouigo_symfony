@@ -1,0 +1,275 @@
+{% extends 'admin_navBar.html.twig' %}
+
+{% block title %}Dashbord client!
+{% endblock %}
+
+{% block body %}
+	<div class="content-wrapper">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-xl-9 col-lg-9 col-md-12   col-sm-12 ">
+
+					<div class="row mt-4 ">
+						<div class="col-xl-12 col-sm-12 mb-12">
+							<div class="row">
+								<div class="col-xl-8 col-sm-12 mb-6 ">
+									<div class="apropos row">
+										<div class="col-6">
+											<h2>DASHBOARD</h2>
+										</div>
+										<div class="col-6 text-right">
+											<h7>Réduire</h7>
+										</div>
+
+										<p class="m-0">
+											Retrouvez ici, le récapitulatif de votre compte client WOUIGO. <br>
+											Pour vitre prendre vos repères sur votre espace utilisateur, nous vous recommandons <br>
+											de suivre le guide d'initiation à 5 étapes ci-dessous. <br>
+											</p>
+
+										<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+											Launch demo modal
+										</button> -->
+
+									</div>
+									
+								</div>
+
+								<div class="col-xl-10 col-sm-12 mb-6 mt-4">
+									<div>
+										<ul class="tt-information">
+											<li class="list-style-type-none">
+												<a class="" data-toggle="modal" data-target="#exampleModal" href="#">1- Définissez le lieu de récupération par défaut de vos véhicules</a>
+											</li>
+											<li class="list-style-type-none">
+												<a href="{{path('affiliation')}}">2- Parlez de nous autour de vous</a>
+											</li>
+											<li class="list-style-type-none">
+												<a href="{{path('about')}}">3- Suivez-nous sur les médias sociaux</a>
+											</li>
+
+											<li class="list-style-type-none">
+												<a href="{{path('paiement_initial')}}">4- Enregistrez d'autres véhicules qui vous appartiennent ou à votre charge</a>
+											</li>
+											
+											<li class="list-style-type-none">
+												<a href="{{path('app_dashbord_parametre')}}">5- Effectuez une nouvelle commande
+												</a>
+											</li>
+											
+										</ul>
+									</div>
+								</div>
+
+								
+
+								<div>
+									<div class="row">
+										<div class="col-3">
+											<div class="cadre">
+												<h6>Mes véhicules</h6>
+												<p>
+													01</p>
+											</div>
+										</div>
+										<div class="col-3">
+											<div class="cadre">
+												<h6>commande à faire</h6>
+												<p style="color: #ff0000">
+													00</p>
+											</div>
+
+										</div>
+										<div class="col-3">
+											<div class="cadre">
+												<h6>Commande en cours
+												</h6>
+												<p style="color: #31f714">
+													01</p>
+											</div>
+										</div>
+										<div class="col-3">
+											<div class="cadre">
+												<h6>
+													Affiliation réussiers</h6>
+												<p style="color: blue">
+													00</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 notification">
+					<div class="row mt-4">
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6>FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6>FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6>FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6>FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Icon Cards-->
+			
+			<!-- Modal -->
+			<div class="modal fade  m-auto d-block" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background: rgba(241, 241, 241, 0); box-shadow: rgba(0, 0, 0, 0) 0px 0px 7px !important;">
+				<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div id="" class="ValiderReception">
+						<div class="">
+							<h5 class="text-center text-secondary cst-fs-17 mt-2" id="">Adresse de récupération du véhicule</h5>
+							<!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button> -->
+						</div>
+						<div class="modal-body p-4">
+							<div class="">
+								<!-- <form action=""> -->
+									<div class="row ">
+										<div class="form-group mb-0 col-7 p-1">
+											<label for="exampleFormControlSelect1" class="cst-fs-12 " style="color: var(--color-blue)">Type de lieu de récepion</label>
+											<select class="form-control" id="exampleFormControlSelect1">
+											<option>Lieu de travail</option>
+											</select>
+										</div>
+
+										<div class="form-group mb-0 col-5 p-1">
+											<label for="exampleFormControlInput1" class="cst-fs-12 " style="color: var(--color-blue)" >Département</label>
+											<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="LITTORAL">
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="form-group mb-0 col-4 p-1">
+											<label for="exampleFormControlInput1" class="cst-fs-12 " style="color: var(--color-blue)">Ville</label>
+											<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Cotonou">
+										</div>
+
+										<div class="form-group mb-0 col-4 p-1">
+											<label for="exampleFormControlInput1" class="cst-fs-12 " style="color: var(--color-blue)">Quartier</label>
+											<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Fidjrosse">
+										</div>
+
+										<div class="form-group mb-0 col-4 p-1">
+											<label for="exampleFormControlInput1" class="cst-fs-12 " style="color: var(--color-blue)">N°Carré/Mairie (en bleu)</label>
+											<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="000">
+										</div>
+
+										<div class="form-group mb-0 col-12 p-1">
+											<label for="exampleFormControlInput1" class="cst-fs-12 " style="color: var(--color-blue)">Indication</label>
+											<textarea class="form-control" rows="3" id="comment" placeholder="Aidez nos chauffeurs à vite trouver l'endroit en fournissant plus de détails. Ex: 2 vons à gauche après carrefour Houénoussou en allant à"></textarea>
+										</div>
+									</div>
+
+									<div class="input-group mt-2">
+										<span class="input-group-btn d-block m-auto">
+											<input type="submit" id="ValiderReception"  value="Suivant " class="btn seConnecter" style="width: 167%!important;">
+										</span>
+									</div>
+								<!-- </form> -->
+							</div>
+						</div>
+					</div>
+					
+					<div id="factureImp" class="p-3 d-none">
+						<div>
+							<p class="text-center mb-3 h6 font-weight-bold">Planification RDV</p>
+							<p class="text-center mb-3">
+								Précisez la date et l'heure de récupération de chaque véhicule par le chauffeur.
+								La date ne doit pas execeder 13 jours l'écheance de la VT 
+								Quant à l'heuren elle doit êtes entre 7H30 et 9H.
+							</p>
+
+							<div>
+								<table class="table cst-fs-12 border text-center mb-2">
+									<thead>
+									<tr class="text-white ">
+										<th scope="col" class=" cst-fw-4 p-1 cst-vertical-align-baseline"> 
+											<div class="border-right text-secondary ml-1 p-2 rounded">BJ 0000 RB</div>
+										</th>
+										<th scope="col" class=" cst-fw-4 p-1 cst-vertical-align-baseline">
+											<div class="border-right text-secondary p-2 p-0 cst-vertical-align-baseline">00-00-0000</div>
+										</th>
+										<th scope="col" class="  cst-fw-4 p-1 cst-vertical-align-baseline">
+											<div class="border-right text-secondary  p-2 p-0 cst-vertical-align-baseline"> 08-00</div>
+										</th>
+										<th scope="col" class="  cst-fw-4 p-1 cst-vertical-align-baseline">
+											<div class="p-2 text-secondary"><i class="fa-solid fa-circle-check"></i> initiale</div>
+										</th>
+									</tr>
+									</thead>
+								</table>
+							</div>
+
+							<div>
+								<table class="table cst-fs-12 border text-center ">
+									<thead>
+									<tr class="text-white ">
+										<th scope="col" class=" cst-fw-4 p-1 cst-vertical-align-baseline"> 
+											<div class="border-right text-secondary ml-1 p-2 rounded">BJ 0000 RB</div>
+										</th>
+										<th scope="col" class=" cst-fw-4 p-1 cst-vertical-align-baseline">
+											<div class="border-right p-2 p-0 cst-vertical-align-baseline text-secondary">00-00-0000</div>
+										</th>
+										<th scope="col" class="  cst-fw-4 p-1 cst-vertical-align-baseline">
+											<div class="border-right  p-2 p-0 cst-vertical-align-baseline text-secondary"> 08-00</div>
+										</th>
+										<th scope="col" class="  cst-fw-14 p-1 cst-vertical-align-baseline" style="color: var(--bleu)">
+											<div class="p-2 " style="color:  var(--color-blue);"><i class="fa-solid fa-circle-check"></i> Modifier</div>
+										</th>
+									</tr>
+									</thead>
+								</table>
+							</div>
+
+							<div class="input-group mt-5">
+								<span class="input-group-btn d-block m-auto">
+									<input type="submit" value="Enregistrer " class="btn seConnecter" style="width: 167%!important;">
+								</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- /cards -->
+		<h2></h2>
+	</div>
+
+	
+</div>
+{% endblock %}

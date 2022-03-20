@@ -1,0 +1,259 @@
+{% extends 'dashbord_admin_navbar.html.twig' %}
+
+{% block title %}Dashbord client!
+{% endblock %}
+
+{% block body %}
+	<div class="content-wrapper">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-xl-9 col-lg-9 col-md-12   col-sm-12 ">
+
+					<div class="row mt-4 ">
+						<div class="col-xl-11 col-sm-12 mb-12">
+							<div class="row p-2" style="border-radius: 12px 36% 64px 36px;background: #ff741c36;">
+								
+									<div class="row col-12">
+										<div class="col-9">
+											<h5 class="text-decoration-underline cst-fs-15-px  " style="color: var(--color-blue);">RECAP COMMANDES</h5>
+										</div>
+										<div class="col-3">
+											<button class="cst-fs-9" style="background: chartreuse;border-radius: 17px;">Voir les diagrammes</button>
+										</div>
+									</div>
+								
+
+									<div class="row ml-0">
+										<div class="col-3 p-2 ">
+											<div class="cadre cst-width-157 bg-white ">
+												<h6 class="cst-fs-10">Nouvelle Commandes</h6>
+												<p>
+													0</p>
+											</div>
+										</div>
+										<div class="col-3 p-2 ">
+											<div class="cadre cst-width-157 bg-white ">
+												<h6 class="cst-fs-10">Commande Traiteés</h6>
+												<p style="">
+													0</p>
+											</div>
+
+										</div>
+										<div class="col-3 p-2 ">
+											<div class="cadre cst-width-157 bg-white">
+												<h6 class="cst-fs-10">Total Commandes
+												</h6>
+												<p style="">
+													0</p>
+											</div>
+										</div>
+										<div class="col-3 p-2 ">
+											<div class="cadre cst-width-157 bg-white ">
+												<h6 class="cst-fs-10">
+													Commandes non recoduites</h6>
+												<p style="">
+													0</p>
+
+											</div>
+										</div>
+									</div>
+							</div>
+
+							<div class="row col-10 p-2 mt-3" style="border-radius: 12px 36% 64px 36px;background: #FFC338;">
+								
+								<div class="row col-12">
+									<div class="col-7">
+										<h5 class="text-decoration-underline cst-fs-15-px " style="color: var(--color-blue);">RECAP MISSIONS</h5>
+									</div>
+									<div class="col-5">
+										<button class="cst-fs-9" style="background: chartreuse;border-radius: 17px;">Voir les diagrammes</button>
+										
+									</div>
+								</div>
+							
+
+								<div class="row ml-0">
+									<div class="col-3 p-2 ">
+										<div class="cadre cst-width-157 bg-white ">
+											<h6 class="cst-fs-10">Mission en cours</h6>
+											<p>
+												0</p>
+										</div>
+									</div>
+									<div class="col-3 p-2 ml-4">
+										<div class="cadre cst-width-157 bg-white ">
+											<h6 class="cst-fs-10">Missions Terminer</h6>
+											<p style="">
+												0</p>
+										</div>
+
+									</div>
+									<div class="col-3 p-2 ml-4 ">
+										<div class="cadre cst-width-157 bg-white">
+											<h6 class="cst-fs-10"> Missions Avortées
+											</h6>
+											<p style="">
+												0</p>
+										</div>
+									</div>
+									<!-- <div class="col-3 p-2 ">
+										<div class="cadre cst-width-157 bg-white ">
+											<h6 class="cst-fs-10">
+												Commandes non recoduites</h6>
+											<p style="">
+												0</p>
+
+										</div>
+									</div> -->
+								</div>
+							</div>
+
+							<div class="row col-10 p-2 mt-3" style="border-radius: 12px 36% 64px 36px;background: #4A8AC9;">
+								
+								<div class="row col-12">
+									<div class="col-7">
+										<h5 class="text-decoration-underline cst-fs-15-px text-white">TÂCHES URGENTES</h5>
+									</div>
+									<div class="col-5">
+										<!-- <button class="cst-fs-9" style="background: chartreuse;border-radius: 17px;">Voir les diagrammes</button> -->
+									</div>
+								</div>
+							
+
+								<div class="row ml-0">
+									<div class="col-3 p-2 ">
+										<div class="cadre cst-width-157 bg-white ">
+											<h6 class="cst-fs-10">Commande Traiteés</h6>
+											<p>
+												0</p>
+										</div>
+									</div>
+									<div class="col-3 p-2 ml-4">
+										<div class="cadre cst-width-157 bg-white ">
+											<h6 class="cst-fs-10">Relance Missions Avortées</h6>
+											<p style="">
+												0</p>
+										</div>
+
+									</div>
+									<div class="col-3 p-2 ml-4 ">
+										<div class="cadre cst-width-157 bg-white">
+											<h6 class="cst-fs-10">Paiement Affiliations
+											</h6>
+											<p style="">
+												0</p>
+										</div>
+									</div>
+									<!-- <div class="col-3 p-2 ">
+										<div class="cadre cst-width-157 bg-white ">
+											<h6 class="cst-fs-10">
+												Commandes non recoduites</h6>
+											<p style="">
+												0</p>
+
+										</div>
+									</div> -->
+								</div>
+							</div>
+
+							<div class="row p-2 mt-3" style="border-radius: 12px 36% 64px 36px;background: #FF741C;">
+								
+								<div class="row col-12">
+									<div class="col-9">
+										<h5 class="text-decoration-underline cst-fs-15-px text-white">RECAP SINISTRES</h5>
+									</div>
+									<div class="col-3">
+										<button class="cst-fs-9" style="background: chartreuse;border-radius: 17px;">Voir les diagrammes</button>
+									</div>
+								</div>
+							
+
+								<div class="row ml-0">
+									<div class="col-3 p-2 ">
+										<div class="cadre cst-width-157 bg-white ">
+											<h6 class="cst-fs-10">Nouveaux Sinistres</h6>
+											<p>
+												0</p>
+										</div>
+									</div>
+									<div class="col-3 p-2 ">
+										<div class="cadre cst-width-157 bg-white ">
+											<h6 class="cst-fs-10">Sinistres en traitement</h6>
+											<p style="">
+												0</p>
+										</div>
+
+									</div>
+									<div class="col-3 p-2 ">
+										<div class="cadre cst-width-157 bg-white">
+											<h6 class="cst-fs-10">Sinistres Réglés
+											</h6>
+											<p style="">
+												0</p>
+										</div>
+									</div>
+									<div class="col-3 p-2 ">
+										<div class="cadre cst-width-157 bg-white ">
+											<h6 class="cst-fs-10">
+												Total Sinistres</h6>
+											<p style="">
+												0</p>
+
+										</div>
+									</div>
+								</div>
+						</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 notification">
+					<div class="row mt-4">
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6 class="cst-fs-10">FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+								<button class="d-flex cst-fs-10 text-white bg-primary rounded" style="margin-inline-start: auto;-webkit-box-shadow: 0px 3px 10px 0px rgb(11 5 5 / 53%);border: 12px;">Lire</button>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6 class="cst-fs-10">FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+								<button class="d-flex cst-fs-10 text-white bg-primary rounded" style="margin-inline-start: auto;-webkit-box-shadow: 0px 3px 10px 0px rgb(11 5 5 / 53%);border: 12px;">Lire</button>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6 class="cst-fs-10">FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+								<button class="d-flex cst-fs-10 text-white bg-primary rounded" style="margin-inline-start: auto;-webkit-box-shadow: 0px 3px 10px 0px rgb(11 5 5 / 53%);border: 12px;">Lire</button>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<div class="mt-4 cardre-notification">
+								<h6 class="cst-fs-10">FAQ 1</h6>
+								<p>Lorem ipsum dolor sit amet consecte tur, adipisi cing elit. Dolor ibus, suscipit magni dignissimos nihil i.</p>
+								<button class="d-flex cst-fs-10 text-white bg-primary rounded" style="margin-inline-start: auto;-webkit-box-shadow: 0px 3px 10px 0px rgb(11 5 5 / 53%);border: 12px;">Lire</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Icon Cards-->
+
+
+		</div>
+		<!-- /cards -->
+		<h2></h2>
+
+		<!-- /.container-fluid-->
+	</div>
+{% endblock %}

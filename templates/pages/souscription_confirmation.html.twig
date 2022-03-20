@@ -1,0 +1,245 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	souscription
+	{{ parent()}}
+{% endblock %}
+
+{% block body %}
+
+	<div class="cst-soucription-pc">
+		<main class="container-fluid d-flex banner sucription-banner ">
+			<div class="container">
+				<div class="mt-5 text-center">
+					<h2>Soucription simplifée en 3 étapes</h2>
+				</div>
+
+				<div class="row mt-5">
+					<div class="col-md-6 ">
+						<div>
+							<div class="row w-90 h-50 ">
+								<div class="text-center mt-2 col-md-12 d-flex justify-content-center">
+									<div class="cst-box">
+										<h1 class="">1</h1>
+										<hr class="m-auto  border border-1 w-50 text-primary bg-primary cst-height-3">
+
+
+										<p class="cst-txt-gray">Enregistrez votre véhicule
+											<br>
+											à l'aide de la carte grise</p>
+									</div>
+								</div>
+
+								<div class="text-center mt-2 col-md-12 d-flex justify-content-center">
+									<div class="cst-box">
+										<h1 class="cst-soucription">2</h1>
+										<hr class="m-auto  border border-1 w-50 text-primary bg-primary cst-height-3">
+										<p class="cst-txt-gray">Entrez vos information
+											<br>
+											d'identification</p>
+
+									</div>
+								</div>
+
+
+								<div class="text-center col-md-12 d-flex justify-content-center">
+									<div class="cst-box-show bg-white">
+										<h1 class="">3</h1>
+										<hr class="m-auto  border border-1 w-50 text-primary bg-primary cst-height-3">
+										<p class="cst-txt-gray">Effectuez le paiement
+											<br>
+											avec le mode choisi
+										</p>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+
+					<div class="col-md-6 ">
+						<div class="row cst-sucription-rights cst-bd-sd-orange mb-5">
+							<div class="container" style="padding: 3em;">
+								<img src="img/icône_success.png" data-retina="true" class="cst-fs-img-center cst-script-confim-image" alt="">
+							</div>
+
+							<div class="container pb-5">
+								<p class="h6 text-center text-secondary">
+									Félicitations!
+									<br>
+									Votre paiement a été executé avec succés.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+
+		<section class=" banner sucription-banner cst-soucription-mobil">
+			<div class="container-fluid p-4">
+				<div class="text-center">
+					<h2>Soucription simplifée en 3 étapes</h2>
+					<br/>
+				</div>
+
+				<div class="row text-center mt-4">
+					<div class="col-4">
+						<h1 class="cst-soucription-h2">1</h1>
+						<hr class="cst-hr-souscription"/>
+					</div>
+					<div class="col-4">
+						<h1 class="cst-soucription-h2">2</h1>
+						<hr class="cst-hr-souscription"/>
+					</div>
+					<div class="col-4">
+						<h1 class="cst-soucription-h2-activate">3</h1>
+						<hr class="cst-hr-souscription-activate"/>
+					</div>
+				</div>
+
+
+				<div class="row cst-sucriptions-sm mt-3">
+
+					<div>
+						<div class="container">
+							<img src="img/icône_success.png" data-retina="true" class="cst-fs-img-center cst-script-confim-image mt-5" alt="">
+						</div>
+
+						<div class="container pb-4 mt-5">
+							<p class="h6 text-center text-secondary">
+								Félicitations!
+								<br>
+								Votre paiement a été executé avec succés.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-12 row justify-content-center d-flex form-group mb-3 mt-4">
+
+						<div class="col-12 justify-content-center d-flex form-group mb-3">
+							<div id="submit-btn"></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<section class="mt-5 cst-soucription-methode">
+			<div class="container-fluid">
+				<h2 class="text-center cst-txt-lightblue" style="font-size: 47px;">Paiement acceptés</h2>
+				<p class="text-center cst-txt-v-lightgray" style="color:#979797">Nous vous recommandons par defaut de payer par Mobile Money
+					<br>
+					pour bénéficier de la proximité sur support techinique.</p>
+			</div>
+			<div>
+				<img src="{{asset('/img/image_moyen_paiement.png')}} " alt="Logo_ecriture_bleu_sans_fond" style="display: block;margin: auto;width: 40%;padding: 25px;" class="cst-sucription-image cst-fs-img-center p-4 cst-script-confim-image"/>
+			</div>
+		</section>
+
+		<!-- Utilisateurs cible -->
+		<section class="main-section py-3 py-md-0 target cst-bg-darkgray">
+			<div class="separator py-3 py-md-5 px-3 text-center">
+				<p class="fs-1 text-white pm-0 separator-title cst-txt-blues">Bon à savoir !</p>
+				<p class="cst-fs-sm m-0 cst-txt-lightgray px-4">Les profils utilisateur qui peuvent ouvrir un compte Wouigo</p>
+			</div>
+			<div class="container row m-auto px-lg-5">
+				<div class=" col-lg-4 col-12 col-sm-12 col-md-4">
+					<ul>
+						<li>
+							<p class="text-white cst-fs-5">
+								Sur wouigo, vous payer uniquement pour les service souscrit.l'argent destiné à la caisse CNSR se paye sur place.
+							</p>
+						</li>
+						<li>
+							<p class="text-white cst-fs-5">
+								Vous pouvez modifier certaines information fournies à l'inscription en allant dans les paramétres de vorte compte.
+							</p>
+						</li>
+						<li>
+							<p class="text-white cst-fs-5">Vous êtes responsable des données erronéés enregistrées et qui impactent le bon fonctionnement des prestations escomptéés.
+							</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-lg-4 col-12 col-sm-12 col-md-4">
+					<ul>
+						<li>
+							<p class="text-white cst-fs-5">Selon sa catégorie et l'usage quotidien, vous pouvez souscrire à nos service pour un même véhicule jusqu'à 4 fois en 1 ans
+							</p>
+						</li>
+						<li class="cst-sucription-displayenone ">
+							<p class="text-white cst-fs-5">
+								l'assurance du véhicule doit êtes valide le jour de votre réception de votre automobile.
+							</p>
+						</li>
+						<li class="cst-sucription-displayenone ">
+							<p class="text-white  cst-fs-5">Un défaut d'assurance auto entraîne le report de la mission et des coûs supplémentaires en cas de relance de la commande SOS Driver.
+							</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-lg-4 col-12 col-sm-12 col-md-4 ">
+					<ul>
+						<li class="cst-sucription-displayenone ">
+							<p class="text-white cst-fs-5">Choisissez par default votre lieu de travail comme adresse de récupération de vos récupération de votre véhicules
+							</p>
+						</li>
+						<li class="cst-sucription-displayenone ">
+							<p class="text-white cst-fs-5">La réception des véhicules doit se faire entre 07h30 et 09h00 pour vous garantir un retour rapide.
+							</p>
+						</li>
+						<li class="cst-sucription-displayenone ">
+							<p class="text-white cst-fs-5">Votre retard au lieu RDV entraine un report de la prestation SOS Driver pour une heurs/date ultérieur au choix et des frais en surplus.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+
+		<footer>
+			<div class="container-fluid row d-flex py-2">
+				<div class="col-md-3 col-6 pb-4 cst-fs-sm cst-txt-gray">
+					<a class="navbar-brand" href="#">
+						<img src="{{asset('/img/Logo_nom_mantra_blanc_vertical.png')}} " alt="Logo_ecriture_bleu_sans_fond" width="100px"/>
+					</a>
+				</div>
+
+				<nav class="d-flex align-items-center col-md-6 col-6 row pb-4 cst-fs-sm cst-txt-gray">
+					<ul class="cst-effect-link cst-list-style-type m-0 p-0 text-center ">
+						<li class="min-vw-50 m-2 d-inline-block">
+							<a href="#" class="p-0  position-relative cst-txt-gray  text-decoration-none d-inline-block cst-font-arial ">Nous contacter</a>
+						</li>
+						<li class="min-vw-50 d-inline-block m-2">
+							<a href="#" class="p-0  position-relative cst-txt-gray text-decoration-none d-inline-block cst-font-arial">Conditions Générales d'utilisation</a>
+						</li>
+						<li class="min-vw-50 d-inline-block m-2">
+							<a href="#" class="p-0  position-relative cst-txt-gray text-decoration-none d-inline-block cst-font-arial">Condition Générales de ventes</a>
+						</li>
+
+					</ul>
+				</nav>
+
+				<div class="col-md-3  pt-3d-flex flex-column align-items-center justify-content-center pb-4 cst-fs-sm cst-txt-gray">
+					<img src="{{asset('/img/image_moyen_paiement.png')}}" alt="Logo_ecriture_bleu_sans_fond" class="ms-0 d-block mb-3" style="width: 105%;"/>
+
+					<h3 class="cst-fs-15-px  fw-bold  text-end">Copyright, Wouigo 2021</h3>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			setTimeout(() => {
+				window.location.href = "{{ path('app_loginConextion') }}";
+				}, 5000);
+		</script>
+	{% endblock %}

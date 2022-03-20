@@ -1,0 +1,184 @@
+{% extends 'admin_navBar.html.twig' %}
+
+{% block title %}
+	Dashbord parametre
+{% endblock %}
+
+{% block body %}
+	<div class="content-wrapper">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-xl-9 col-lg-9 col-md-12   col-sm-12 ">
+
+					<div class="row mt-4 ">
+						<div class="col-xl-12 col-sm-12 mb-12">
+							<div class="row">
+								<div class="col-xl-8 col-sm-12 mb-6 ">
+									<div class="apropos row">
+										<div class="col-6">
+											<h2>PARAMETRE</h2>
+										</div>
+										<div class="col-6 text-right">
+											<h7 class="">Afficher</h7>
+										</div>
+
+										<p class="m-0">
+											Retrouvez ici, les détail de votre compte client.<br>
+										</p>
+
+									</div>
+								</div>
+
+
+								<div class="col-xl-8 col-sm-12 mb-6 ">
+									<div class="cardre_aroundi row">
+										<div class="col-10">
+											<h2>Profil Utilisateur :
+												<span>Particulier</span>
+											</h2>
+										</div>
+										<div class="col-2 text-right">
+											<h7 class="afficher">Afficher</h7>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xl-8 col-sm-12 mb-6 ">
+									<div class="cardre_aroundi row">
+										<div class="col-10">
+											<h2>Moyens de paiement</h2>
+										</div>
+										<div class="col-2 text-right">
+											<h7 class="afficher">Afficher</h7>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xl-8 col-sm-12 mb-6 ">
+									<div class="cardre_aroundi row">
+										<div class="col-10">
+											<h2>Lieu de réception de vos véhicules</h2>
+										</div>
+										<div class="col-2 text-right">
+											<h7 class="reduire">Afficher</h7>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xl-8 col-sm-12 mb-6 ">
+									<form action="" method="POST">
+										<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+										<div class="cardre_aroundi row">
+											<div class="col-12 mb-3 cst-fs-12">
+												<a  class="cst-fs-12">
+													<i id="plus-cercle" class="fas fa-plus-circle"></i>
+													Ajoutez/Enregistrer un lieu de récuperation de vos véhicules</a>
+											</div>
+
+
+											<div id="ajoutVehicule" class="row d-none">
+												<div class="col-8 mt-1">
+													<div class="">
+														<label for="exampleInputEmail1" class="text-primary cst-ff-sans-serif">Type de lieu réception</label>
+														<select class="form-control border border-primary" style="padding: 0.45rem; height: calc(2.4rem + 2px);!important" id="exampleFormControlSelect1">
+															<option>Lieu de travail</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+															<option>5</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-4 mt-2">
+													<label for="exampleInputEmail1" class="text-primary cst-ff-sans-serif">Département</label>
+													<input type="email" class="form-control form-control-sm border border-primary" id="exampleInputEmail1" aria-describedby="emailHelp" style="padding: 0.45rem;" placeholder="LITTORAL">
+												</div>
+
+												<div class="col-4 mt-2">
+													<label for="exampleInputEmail1" class="text-primary cst-ff-sans-serif">Ville</label>
+													<input type="email" class="form-control form-control-sm border border-primary" id="exampleInputEmail1" aria-describedby="emailHelp" style="padding: 0.45rem;" placeholder="LITTORAL">
+												</div>
+
+												<div class="col-4 mt-2">
+													<label for="exampleInputEmail1" class="text-primary cst-ff-sans-serif">Quartier</label>
+													<input type="email" class="form-control form-control-sm border border-primary" id="exampleInputEmail1" aria-describedby="emailHelp" style="padding: 0.45rem;" placeholder="LITTORAL">
+												</div>
+												<div class="col-4 mt-2">
+													<label for="exampleInputEmail1" class="text-primary cst-ff-sans-serif">N Carré|Marie</label>
+													<div class="input-group">
+														<input type="text" class="form-control form-control-sm border border-primary" style="padding: 0.45rem;" placeholder="0000" aria-label="Text input with dropdown button">
+														<div class="input-group-append">
+															<button class="btn btn-outline-secondary dropdown-toggle border border-primary" type="button" data-toggle="dropdown" aria-haspopup="true" style="padding: 0.45rem;" aria-expanded="true" style="height: 100%;font-size: 9px;">N Carré</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="#">Action</a>
+																<a class="dropdown-item" href="#">Another action</a>
+																<a class="dropdown-item" href="#">Something else here</a>
+																<div role="separator" class="dropdown-divider"></div>
+																<a class="dropdown-item" href="#">Separated link</a>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-12 mt-2">
+													<div class="form-floating">
+														<label for="floatingTextarea2" class="text-primary cst-ff-sans-serif">Indication</label>
+														<textarea class="form-control border border-primary" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+													</div>
+												</div>
+
+												<div class="col-12">
+													<div class="input-group loginButton justify-content-center" style="left: 0% !important">
+														<span class="input-group-btn loginTaille">
+															<input id="Enregistrer" type="button" value="Enregistrer" class="btn seConnecter" onClick='submitDetailsForm()' style="width: 7rem !important;">
+														</span>
+													</div>
+												</div>
+											</div>
+
+											
+
+											</div class="">
+												<div id="quitterVehicules" class="d-none" >
+													<div class="col-12 mt-2">
+													<label for="exampleInputEmail1" class="text-primary cst-ff-sans-serif">Quartier</label>
+													<input type="email" class="form-control form-control-sm border border-primary" id="exampleInputEmail1" aria-describedby="emailHelp" style="padding: 0.45rem;" placeholder="LITTORAL">
+												</div>
+											
+
+												<div class="col-12">
+													<div class="input-group loginButton justify-content-center" style="left: 0% !important">
+														<span class="input-group-btn loginTaille">
+															<input id="Quitter" type="button" value="Quitter" class="btn seConnecter" onClick='submitDetailsForm()' style="width: 7rem !important;">
+														</span>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</form>
+								</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 notification"></div>
+			</div>
+
+			<!-- Icon Cards-->
+
+
+		</div>
+		<!-- /cards -->
+		<h2></h2>
+
+		<!-- /.container-fluid-->
+	</div>
+
+	<script language="javascript" type="text/javascript">
+    function submitDetailsForm() {
+       $("#formId").submit();
+    }
+</script>
+{% endblock %}
