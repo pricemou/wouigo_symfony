@@ -374,6 +374,7 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
   background: white;
   color: #3ab5fc;
 }
+
 #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a,
 #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a {
   color: #ced4da;
